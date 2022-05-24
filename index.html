@@ -35,7 +35,9 @@
       <ul class="navigation-list navigation-opportunities">
         <li>
           <label class="product-catalog" for="catalog">Каталог таваров</label>
-          <button class="product-catalog button-catalog" type="button" id="catalog">+</button>
+          <button class="product-catalog button-catalog" type="button" id="catalog">
+            <a class="types-products" href="#"></a> <!--переводит не на каталог, а "всплывает" окно с видами продуктов. Надо делать якорь к строкам 113-139?-->
+          </button>
         </li>
         <li>
           <a href="#delivery">Доставка</a> <!--не забудь вставить имя в нужной секции-->
@@ -109,11 +111,33 @@
       </section>
 
       <section class="types-products">
-        <h2 class="visually-hidden">Виды товаров</h2>
+        <h2 class="visually-hidden">Виды товаров</h2> <!--ссылкы на конкретные виды товаров из каталога--> <!--Надо сделать наследование ссылки для картинки-->
         <ul class="products-list">
-
+          <li>
+            <img class="virtual-reality-glasses" src="#" alt="Очки виртуальной реальности">
+            <a class="products-title" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <img class="selfies-monopods" src="#" alt="Моноподы для селфи">
+            <a class="products-title" href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <img class="action-cameras" src="#" alt="Экшн-камеры">
+            <a class="products-title" href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <img class="fitness-bracelet" src="#" alt="Фитнес-браслеты">
+            <a class="products-title" href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <img class="smart-watches" src="#" alt="Умные часы">
+            <a class="products-title" href="#">Умные часы</a>
+          </li>
+          <li>
+            <img class="drones" src="#" alt="Квадрокоптеры">
+            <a class="products-title" href="#">Квадрокоптеры</a>
+          </li>
         </ul>
-
       </section>
 
     </main>
