@@ -5,8 +5,112 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="page-header">
+    <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
+    <img class="logo" src="#" alt="Логотип интернет-магазина device.">
+     <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Search</label> <!--вставить иконку лупы-->
+          <input placeholder="Текст поиска" type="text" id="search" name="search"></input>
+        </form>
+          <a class="button button-search" href="#">Найти</a> <!--ссылку на catalog.html убрал так, как запрос в каталог идет в зависимости от текста отправленного на сервер (не знаю как сделать)-->
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <label class="visually-hidden" for="Log-in">Войти</label><!-- вставить иконку для логина -->
+          <button class="button-login" type="button" id="Log-in">Войти</button>
+        </li>
+        <li class="navigation-item">
+          <label class="visually-hidden" for="compare">Сравнить</label><!-- вставить иконку для сравнения -->
+          <button class="button-compare" type="button" id="compare">Сравнить</button>
+        </li>
+        <li class="navigation-item">
+          <label class="visually-hidden" for="basket">Корзина</label><!-- вставить иконку для корзины -->
+          <button class="button-basket" type="button" id="basket">Корзина</button>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-opportunities">
+        <li>
+          <label class="product-catalog" for="catalog">Каталог таваров</label>
+          <button class="product-catalog button-catalog" type="button" id="catalog">+</button>
+        </li>
+        <li>
+          <a href="#delivery">Доставка</a> <!--не забудь вставить имя в нужной секции-->
+        </li>
+        <li>
+          <a href="#warranty">Гарантия</a> <!--не забудь вставить имя в нужной секции-->
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a> <!--не забудь вставить имя в нужной секции-->
+        </li>
+      </ul>
+     </nav>
+    </header>
+    <main class="main-index">
+      <section class="main-slider">
+        <img class="slider-img" src="#" alt="Промо-слайдер.">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
 
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current">
+              <span class="visually-hidden"></span>
+            </button>
+            <img class="drone-01" src="#" alt="Квадрокоптер с лазером.">
+            <h2 class="slider-pagination-drone">Порхает как бабочка,<br> жалит как пчела!</h2>
+            <p>Это обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
+            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+             <dl>
+               <dt>Дальность полета</dt>
+               <dd>800 м</dd>
+               <dt>Радиус поражения</dt>
+               <dd>50 м</dd>
+             </dl>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button">
+              <span class="visually-hidden"></span>
+            </button>
+            <img class="fitness-bracelet-02" src="#" alt="Фитнес-браслет.">
+            <h2 class="slider-pagination-bracelet">Худеем<br>правильно!</h2>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+             <dl>
+               <dt>Без подзарядки</dt>
+               <dd>48 часов</dd>
+             </dl>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button">
+              <span class="visually-hidden"></span>
+            </button>
+            <img class="selfie-stick-03" src="#" alt="Палка для селфи.">
+            <h2 class="slider-pagination-selfie-stick">Делай селфи,<br>как Бен Стиллер!</h2>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+             <dl>
+               <dt>Длина палки</dt>
+               <dd>8,5 метров</dd>
+               <dt>Вес палки</dt>
+               <dd>5 кг</dd>
+               <dt>Материал</dt>
+               <dd>карбон</dd>
+             </dl>
+          </li>
+        </ol>
+
+      </section>
+
+    </main>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <p>Привет</p>
   </body>
 </html>
