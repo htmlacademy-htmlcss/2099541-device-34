@@ -11,11 +11,11 @@
      <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search">Search</label> <!--вставить иконку лупы-->
-          <input placeholder="Текст поиска" type="text" id="search" name="search"></input>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="appointment-text">Search</label> <!--вставить иконку лупы-->
+          <input placeholder="Текст поиска" type="text" name="appointment-text"></input>
+          <a class="button button-search" href="catalog.html">Найти</a> <!--ссылку на catalog.html убрал так, как запрос в каталог идет в зависимости от текста отправленного на сервер (не знаю как сделать)-->
         </form>
-          <a class="button button-search" href="#">Найти</a> <!--ссылку на catalog.html убрал так, как запрос в каталог идет в зависимости от текста отправленного на сервер (не знаю как сделать)-->
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -34,25 +34,28 @@
       </ul>
       <ul class="navigation-list navigation-opportunities">
         <li>
-          <label class="product-catalog" for="catalog">Каталог таваров</label>
-          <button class="product-catalog button-catalog" type="button" id="catalog">
-            <a class="types-products" href="#"></a> <!--переводит не на каталог, а "всплывает" окно с видами продуктов. Надо делать якорь к строкам 113-139?-->
+          <label for="catalog">Каталог таваров</label>
+          <button class="button button-catalog" type="button" name="catalog">
+            <a class="button types-products" href="catalog.html"></a>
           </button>
         </li>
         <li>
-          <a href="#delivery">Доставка</a> <!--не забудь вставить имя в нужной секции-->
+          <a href="#delivery">Доставка</a>
         </li>
         <li>
-          <a href="#warranty">Гарантия</a> <!--не забудь вставить имя в нужной секции-->
+          <a href="#warranty">Гарантия</a>
         </li>
         <li>
-          <a href="#contacts">Контакты</a> <!--не забудь вставить имя в нужной секции-->
+          <a href="#contacts">Контакты</a>
         </li>
       </ul>
      </nav>
     </header>
     <main class="main-index">
-      <section class="main-slider">
+      <section class="promo-slider">
+        <h2 class="slider">
+          <span class="visually-hidden">Промо-слайдер</span>
+        </h2>
         <img class="slider-img" src="#" alt="Промо-слайдер.">
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
@@ -62,14 +65,14 @@
         </button>
 
         <ol class="slider-pagination">
-          <li class="slider-pagination-item">
+          <li class="slider-pagination-item item_1"><!--долнительный класс item-1, чтобы потом была возможность скрывать-->
             <button class="slider-pagination-button slider-pagination-button-current">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"> 1 фото(дрон-убийца)</span>
             </button>
             <img class="drone-01" src="#" alt="Квадрокоптер с лазером.">
-            <h2 class="slider-pagination-drone">Порхает как бабочка,<br> жалит как пчела!</h2>
+            <h3 class="slider-pagination-drone">Порхает как бабочка,<br> жалит как пчела!</h3>
             <p class="item-description">Это обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
-            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+            <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
              <dl>
                <dt>Дальность полета</dt>
                <dd>800 м</dd>
@@ -77,27 +80,27 @@
                <dd>50 м</dd>
              </dl>
           </li>
-          <li class="slider-pagination-item">
+          <li class="slider-pagination-item item_2"><!--долнительный класс item-1, чтобы потом была возможность скрывать-->
             <button class="slider-pagination-button slider-pagination-button">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden">2 фото(Фитнес-браслет)</span>
             </button>
             <img class="fitness-bracelet-02" src="#" alt="Фитнес-браслет.">
-            <h2 class="slider-pagination-bracelet">Худеем<br>правильно!</h2>
+            <h3 class="slider-pagination-bracelet">Худеем<br>правильно!</h3>
             <p class="item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+            <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
              <dl>
                <dt>Без подзарядки</dt>
                <dd>48 часов</dd>
              </dl>
           </li>
-          <li class="slider-pagination-item">
+          <li class="slider-pagination-item item_3"><!--долнительный класс item-1, чтобы потом была возможность скрывать-->
             <button class="slider-pagination-button slider-pagination-button">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden">3 фото(селфи-палка)</span>
             </button>
             <img class="selfie-stick-03" src="#" alt="Палка для селфи.">
-            <h2 class="slider-pagination-selfie-stick">Делай селфи,<br>как Бен Стиллер!</h2>
+            <h3 class="slider-pagination-selfie-stick">Делай селфи,<br>как Бен Стиллер!</h3>
             <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a href="#">Подробнее</a><!--ссылка на конкретный товар из каталога-->
+            <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
              <dl>
                <dt>Длина палки</dt>
                <dd>8,5 метров</dd>
@@ -110,38 +113,171 @@
         </ol>
       </section>
 
-      <section class="types-products">
-        <h2 class="visually-hidden">Виды товаров</h2> <!--ссылкы на конкретные виды товаров из каталога--> <!--Надо сделать наследование ссылки для картинки-->
+      <section class="gallery-products">
+        <h2 class="types-products">
+          <span class="visually-hidden">Виды товаров</span>
+        </h2>
         <ul class="products-list">
           <li>
-            <img class="virtual-reality-glasses" src="#" alt="Очки виртуальной реальности">
-            <a class="products-title" href="#">Виртуальная реальность</a>
+            <a href="catalog.html">Виртуальная реальность
+              <img class="virtual-reality-glasses" src="#" alt="Очки виртуальной реальности">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
           <li>
-            <img class="selfies-monopods" src="#" alt="Моноподы для селфи">
-            <a class="products-title" href="#">Моноподы для селфи</a>
+            <a href="catalog.html">Моноподы для селфи
+              <img class="selfies-monopods" src="#" alt="Моноподы для селфи">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
           <li>
-            <img class="action-cameras" src="#" alt="Экшн-камеры">
-            <a class="products-title" href="#">Экшн-камеры</a>
+            <a class="products-title" href="catalog.html">Экшн-камеры
+              <img class="action-cameras" src="#" alt="Экшн-камеры">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
           <li>
-            <img class="fitness-bracelet" src="#" alt="Фитнес-браслеты">
-            <a class="products-title" href="#">Фитнес-браслеты</a>
+            <a class="products-title" href="catalog.html">Фитнес-браслеты
+              <img class="fitness-bracelet" src="#" alt="Фитнес-браслеты">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
           <li>
-            <img class="smart-watches" src="#" alt="Умные часы">
-            <a class="products-title" href="#">Умные часы</a>
+            <a class="products-title" href="catalog.html">Умные часы
+              <img class="smart-watches" src="#" alt="Умные часы">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
           <li>
-            <img class="drones" src="#" alt="Квадрокоптеры">
-            <a class="products-title" href="#">Квадрокоптеры</a>
+            <a class="products-title" href="catalog.html">Квадрокоптеры
+              <img class="drones" src="#" alt="Квадрокоптеры">
+            </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
         </ul>
       </section>
 
+      <section class="buyer's-information">
+        <h2 class="buyer's-information-title">
+          <span class="visually-hidden">Информация покупателю</span>
+        </h2>
+        <ol class="buyer's-information-pagination">
+          <li class="buyer's-information-pagination-item">
+            <button class="button-delivery button-delivery-current">
+              <a name="delivery">Доставка</a>
+            </button>
+            <h3 class="delivery-title">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="buyer's-information-pagination-item">
+            <button class="button-warranty button-warranty">
+              <a name="warranty">Гарантия</a>
+            </button>
+            <h3 class="warranty-title">Гарантия</h3>
+            <p>Если из-за возгорания купленного нас товара у вас<br>сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </li>
+          <li class="buyer's-information-pagination-item">
+            <button class="button-credit button-credit">Кредит</button>
+            <h3 class="credit-title">Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитныу<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка разумеется</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="about-delivery">
+        <h2 class="about-delivery-title">
+          <span class="visually-hidden">Доставка редкого товара</span>
+        </h2>
+        <img class="truck" src="#" alt="иконка грузовика">
+        <h3 class="product-under-the-order">Доставим редкий товар под заказ</h3>
+        <a href="#">
+          <span class="visually-hidden">информация для заказа редкого товара</span>
+        </a>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-title">О нас</h2>
+        <p class="motivation-phrase">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
+        <p class="delivery-phrase">Мы можем доставить ваш товар в самые отдаленные<br>уголки России транспортными компаниями:</p>
+        <ul>
+          <li><b>Меловые линии</b></li>
+          <li><b>СДИК</b></li>
+          <li><b>ТоксБерри</b></li>
+        </ul>
+        <a class="more-information" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts-title">
+          <a name="contacts">Контакты</a>
+        </h2>
+        <p class="contacts-phrase">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
+        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        </address>
+        <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="more-information send-us" href="#">Напишите нам</a>
+      </section>
+
+      <section class="newsletter">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p>Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот все.</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+          <button class="button newsletter-button" type="button">Подписаться</button>
+        </form>
+        <img class="check-mark" src="#" alt="галочка, подтвержадющая бесплатность">
+        <p>Это бесплатно</p>
+      </section>
     </main>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-    <p>Привет</p>
+    <footer class="page-footer">
+      <h2 class="page-footer-title">
+        <span class="visually-hidden">Интернет-магазин гаджетов "device"</span>
+      </h2>
+      <img class="logo" src="#" alt="Логотип интернет-магазина device.">
+      <address class="footer-contacts-address">
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+      <ul class="footer-navigation-list">
+        <li>
+          <a href="#delivery">Доставка</a>
+        </li>
+        <li>
+          <a href="#warranty">Гарантия</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <address class="footer-contacts-address">
+        <a class="contacts-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
+      </address>
+      <section class="footer-social">
+        <h2 class="page-footer-title">
+          <span class="visually-hidden">Подписывайтесь на наши социальные сети</span>
+        </h2>
+        <ul>
+          <li>
+            <a class="button" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a class="button" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a class="htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank">
+        <span class="visually-hidden">Логотип htmlacademy</span>
+      </a>
+    </footer>
   </body>
 </html>
