@@ -5,6 +5,8 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+  </head>
+  <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
       <img class="logo" src="#" alt="Логотип интернет-магазина device.">
@@ -12,9 +14,11 @@
         <ul class="navigation-list">
           <li class="navigation-item">
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="search">Search</label> <!--вставить иконку лупы-->
-            <input placeholder="Текст поиска" type="text" id="search" name="search"></input>
-            <a class="button button-search" href="#">Найти</a> <!--ссылку на catalog.html убрал так, как запрос в каталог идет в зависимости от текста отправленного на сервер (не знаю как сделать)-->
+            <label for="appointment-text">
+              <span class="visually-hidden">Search</span>
+            </label> <!--вставить иконку лупы-->
+            <input placeholder="Текст поиска" type="text" name="appointment-text" id="appointment-text"></input>
+            <a class="button button-search" href="catalog.html">Найти</a> <!--ссылку на catalog.html убрал так, как запрос в каталог идет в зависимости от текста отправленного на сервер (не знаю как сделать)-->
           </form>
           </li>
         </ul>
@@ -34,9 +38,11 @@
         </ul>
         <ul class="navigation-list navigation-opportunities">
           <li>
-            <label class="product-catalog" for="catalog">Каталог таваров</label>
-            <button class="product-catalog button-catalog" type="button" id="catalog">
-              <a class="types-products" href="catalog.html"></a>
+            <label for="catalog">Каталог таваров</label>
+            <button class="button button-catalog" type="button" name="catalog" id="catalog">
+              <a class="button types-products" href="catalog.html">
+                <span class="visually-hidden">Открыть каталог</span>
+              </a>
             </button>
           </li>
           <li>
