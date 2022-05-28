@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
-    <a class="navigation-logo" href="index.html">
+    <a class="navigation-logo" href="#">
       <img class="page-header-logo" src="#" alt="Логотип интернет-магазина device.">
     </a>
       <nav class="navigation">
@@ -17,31 +17,27 @@
           <label for="appointment-text">
             <span class="visually-hidden">Search</span>
           </label> <!--вставить иконку лупы-->
-          <input placeholder="Текст поиска" type="text" name="appointment-text" id="appointment-text"></input>
+          <input class="appointment-form-search-field" placeholder="Текст поиска" type="text" name="appointment-text" id="appointment-text">
           <a class="button button-search" href="catalog.html">Найти</a>
         </form>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <label class="visually-hidden" for="Login">Войти</label><!-- вставить иконку для логина -->
-          <button class="button-login button-login-current" type="button" id="Login">
-            <a href="index.html">Войти</a> <!--ссылка на главную когда залогинен-->
-          </button>
+            <a class="avigation-item-login" href="index.html">Войти
+              <img class="login-img" src="#" alt="icon-bust">
+            </a> <!--ссылка на главную когда залогинен-->
         </li>
         <li class="navigation-item">
-          <label class="visually-hidden" for="Logoff">Выйти</label><!-- вставить иконку для логина -->
-          <button class="button-logoff" type="button" id="Logoff">
-            <a href="index.html">Выйти</a> <!--состояние главной страницы когда залогинен-->
-          </button>
+            <a class="navigation-item-logoff" href="index.html">
+              <span class="visually-hidden">Выйти</span>
+            </a> <!--состояние главной страницы когда залогинен-->
         </li>
       </ul>
       <ul class="navigation-tools">
         <li class="navigation-item">
           <label class="visually-hidden" for="compare">Сравнить</label><!-- вставить иконку для сравнения -->
-          <button class="button-compare" type="button" id="compare">
-            <a href="#">Сравнить</a>
-          </button>
+          <button class="button-compare" type="button" id="compare">Сравнить</button>
         </li>
         <li class="navigation-item">
           <label class="visually-hidden" for="basket">Корзина</label><!-- вставить иконку для корзины -->
@@ -49,21 +45,19 @@
         </li>
       </ul>
       <ul class="navigation-list navigation-opportunities">
-        <li>
-          <label for="catalog">Каталог таваров</label>
-          <button class="button button-catalog" type="button" name="catalog" id="catalog">
-            <a class="button types-products" href="catalog.html">
-              <span class="visually-hidden">Открыть каталог</span>
-            </a>
+        <li class="navigation-item">
+          <a class="navigation-catalog" href="catalog.html">Каталог товаров</a>
+          <button class="button button-catalog-types" type="button">
+            <span class="visually-hidden">Открыть виды товаров каталога</span>
           </button>
         </li>
-        <li>
+        <li class="navigation-item">
           <a href="#delivery">Доставка</a>
         </li>
-        <li>
+        <li class="navigation-item">
           <a href="#warranty">Гарантия</a>
         </li>
-        <li>
+        <li class="navigation-item">
           <a href="#contacts">Контакты</a>
         </li>
       </ul>
@@ -90,11 +84,11 @@
             <h3 class="slider-pagination-drone">Порхает как бабочка,<br> жалит как пчела!</h3>
             <p class="item-description">Это обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
             <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
-             <dl>
-               <dt>Дальность полета</dt>
-               <dd>800 м</dd>
-               <dt>Радиус поражения</dt>
-               <dd>50 м</dd>
+             <dl class="main-characteristics">
+               <dt class="flights-range">Дальность полета</dt>
+               <dd class="amount">800 м</dd>
+               <dt class="damage-radius">Радиус поражения</dt>
+               <dd class="amount">50 м</dd>
              </dl>
           </li>
           <li class="slider-pagination-item item_2"><!--долнительный класс item-1, чтобы потом была возможность скрывать-->
@@ -105,9 +99,9 @@
             <h3 class="slider-pagination-bracelet">Худеем<br>правильно!</h3>
             <p class="item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
             <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
-             <dl>
-               <dt>Без подзарядки</dt>
-               <dd>48 часов</dd>
+             <dl class="main-characteristics">
+               <dt class="works-duration">Без подзарядки</dt>
+               <dd class="amount">48 часов</dd>
              </dl>
           </li>
           <li class="slider-pagination-item item_3"><!--долнительный класс item-1, чтобы потом была возможность скрывать-->
@@ -118,13 +112,13 @@
             <h3 class="slider-pagination-selfie-stick">Делай селфи,<br>как Бен Стиллер!</h3>
             <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a href="catalog.html">Подробнее</a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный товар из каталога-->
-             <dl>
-               <dt>Длина палки</dt>
-               <dd>8,5 метров</dd>
-               <dt>Вес палки</dt>
-               <dd>5 кг</dd>
-               <dt>Материал</dt>
-               <dd>карбон</dd>
+             <dl class="main-characteristics">
+               <dt class="length">Длина палки</dt>
+               <dd class="amount">8,5 метров</dd>
+               <dt class="weigth">Вес палки</dt>
+               <dd class="amount">5 кг</dd>
+               <dt class="material">Материал</dt>
+               <dd class="amount">карбон</dd>
              </dl>
           </li>
         </ol>
@@ -134,61 +128,61 @@
           <span class="visually-hidden">Виды товаров</span>
         </h2>
         <ul class="products-list">
-          <li>
+          <li class="products-list-item">
             <a href="catalog.html">Виртуальная реальность
               <img class="virtual-reality-glasses" src="#" alt="Очки виртуальной реальности">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
-          <li>
+          <li class="products-list-item">
             <a href="catalog.html">Моноподы для селфи
               <img class="selfies-monopods" src="#" alt="Моноподы для селфи">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
-          <li>
+          <li class="products-list-item">
             <a class="products-title" href="catalog.html">Экшн-камеры
               <img class="action-cameras" src="#" alt="Экшн-камеры">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
-          <li>
+          <li class="products-list-item">
             <a class="products-title" href="catalog.html">Фитнес-браслеты
               <img class="fitness-bracelet" src="#" alt="Фитнес-браслеты">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
-          <li>
+          <li class="products-list-item">
             <a class="products-title" href="catalog.html">Умные часы
               <img class="smart-watches" src="#" alt="Умные часы">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
-          <li>
+          <li class="products-list-item">
             <a class="products-title" href="catalog.html">Квадрокоптеры
               <img class="drones" src="#" alt="Квадрокоптеры">
             </a><!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
           </li>
         </ul>
       </section>
-      <section class="buyer's-information">
-        <h2 class="buyer's-information-title">
+      <section class="buyers-information">
+        <h2 class="buyers-information-title">
           <span class="visually-hidden">Информация покупателю</span>
         </h2>
-        <ol class="buyer's-information-pagination">
-          <li class="buyer's-information-pagination-item">
+        <ol class="buyers-information-pagination">
+          <li class="buyers-information-pagination-item">
             <button class="button-delivery button-delivery-current">
-              <a name="delivery">Доставка</a>
+              <a id="delivery">Доставка</a>
             </button>
             <h3 class="delivery-title">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="description">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="buyer's-information-pagination-item">
             <button class="button-warranty button-warranty">
-              <a name="warranty">Гарантия</a>
+              <a id="warranty">Гарантия</a>
             </button>
             <h3 class="warranty-title">Гарантия</h3>
-            <p>Если из-за возгорания купленного нас товара у вас<br>сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            <p class="description">Если из-за возгорания купленного нас товара у вас<br>сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </li>
           <li class="buyer's-information-pagination-item">
             <button class="button-credit button-credit">Кредит</button>
             <h3 class="credit-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитныу<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка разумеется</p>
+            <p class="description">Залезть в долговую яму стало проще! Кредитныу<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка разумеется</p>
           </li>
         </ol>
       </section>
@@ -206,7 +200,7 @@
         <h2 class="about-title">О нас</h2>
         <p class="motivation-phrase">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
         <p class="delivery-phrase">Мы можем доставить ваш товар в самые отдаленные<br>уголки России транспортными компаниями:</p>
-        <ul>
+        <ul class="delivery-company-list">
           <li><b>Меловые линии</b></li>
           <li><b>СДИК</b></li>
           <li><b>ТоксБерри</b></li>
@@ -215,7 +209,7 @@
       </section>
       <section class="contacts">
         <h2 class="contacts-title">
-          <a name="contacts">Контакты</a>
+          <a id="contacts">Контакты</a>
         </h2>
         <p class="contacts-phrase">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -232,14 +226,14 @@
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p>Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот все.</p>
+        <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот все.</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
         <img class="check-mark" src="#" alt="галочка, подтвержадющая бесплатность">
-        <p>Это бесплатно</p>
+        <p class="simple-description">Это бесплатно</p>
       </section>
     </main>
     <footer class="page-footer">
