@@ -22,25 +22,25 @@
             <a class="button button-search" href="catalog.html">Найти</a>
           </form>
           </li>
+          <label class="button-login" for="login">
+            <span class="visually-hidden">Войти</span>
+          </label>
+          <button class="button-login-field" type="button" id="login">Коля Петухов</button> <!--ссылка на главную когда залогинен-->
+        </li>
           <li class="navigation-item">
-            <a class="navigation-item-login" href="#">Коля Петухов
-              <img class="login-img" src="#" alt="icon-bust">
-            </a>
-          </li>
-          <li class="navigation-item">
-              <a class="navigation-item-logoff" href="index.html">Выйти</a> <!--состояние главной страницы когда не залогинен-->
+            <a class="navigation-item-logoff" href="index.html">Выйти</a> <!--состояние главной страницы когда не залогинен-->
           </li>
           <li class="navigation-item">
             <label class="button-compare" for="compare">
               <span class="visually-hidden">Сравнить</span>
             </label><!-- вставить иконку для сравнения -->
-            <button class="button-compare-field" type="button" id="compare" width="83" height="30">Сравнить</button>
+            <button class="button-compare-field" type="button" id="compare">Сравнить</button>
           </li>
           <li class="navigation-item">
             <label class="button-basket" for="basket">
               <span class="visually-hidden">Корзина</span>
             </label><!-- вставить иконку для корзины -->
-            <button class="button-basket-field" type="button" id="basket" width="74" height="30">Корзина</button>
+            <button class="button-basket-field" type="button" id="basket">Корзина</button>
           </li>
         </ul>
         <ul class="navigation-opportunities">
@@ -81,6 +81,9 @@
         <section class="catalog-products">
           <h2 class="catalog-filter">Фильтр:</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset>
+              <legend class="catalog-filter-title">Стоимость</legend>
+            </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
@@ -133,7 +136,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button-show-more" type="submit">Показать</button>
           </form>
         </section>
         <section class="sorting">
@@ -143,10 +146,10 @@
             <option value="cheap">Дешевое</option>
             <option value="expensive">Дорогое</option>
           </select>
-          <a class="button button-up" href="#">
+          <a class="button-up" href="#">
             <span class="visually-hidden">Отсортировать от меньшего к большему</span>
           </a>
-          <a class="button button-down" href="#">
+          <a class="button-down" href="#">
             <span class="visually-hidden">Отсортировать от большего к меньшему</span>
           </a>
         </section>
@@ -181,11 +184,9 @@
           </li>
         </ul>
         <button class="download-more" type="button">Загрузить ещё</button>
-        <ul class="pagination">
+        <ul class="pagination-pages">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev">
-              <span class="pagination-back">назад</span>
-            </a>
+            <button class="pagination-back" type="button">Назад</button>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -203,9 +204,7 @@
             <a class="pagination-link" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next">
-              <span class="pagination-forward">вперёд</span>
-            </a>
+            <button class="pagination-forward" type="button">вперед</button>
           </li>
         </ul>
       </main>
@@ -239,17 +238,17 @@
           </h2>
           <ul class="socials">
             <li class="socials-item">
-              <a class="button button-telegram" href="https://t.me/htmlacademy" target="_blank" width="40" height="40">
+              <a class="button button-telegram" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="socials-item">
-              <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" width="40" height="40">
+              <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
             <li class="socials-item">
-              <a class="button button-twitter" href="https://twitter.com/htmlacademy_ru" target="_blank" width="40" height="40">
+              <a class="button button-twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>

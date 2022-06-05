@@ -77,6 +77,8 @@ ul.navigation-opportunities li {
 .navigation-item-logoff {
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  opacity: 0.3;
 }
 
 .button-compare {
@@ -466,4 +468,149 @@ ul.socials li {
 }
 .htmlacademy-logo {
 text-align: right;
+}
+
+a.product-card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.inner-header-title-lvl2 {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+ul.breadcrumbs li{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.catalog-products {
+  background-color: #F0F0F0;
+}
+
+.catalog-filter {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button-show-more {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.select-control {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.button-up {
+  background-image: url("/images/icons/sort-up.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.button-down {
+  background-image: url("/images/icons/sort-down.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.product-card-title {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.download-more {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+ul.pagination-pages li {
+  display: inline-block;
+}
+
+.pagination-pages {
+  background-color: #EBEBEB;
+}
+
+.pagination-back {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+.pagination-forward {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #444444;
+  opacity: 0.3;
 }
