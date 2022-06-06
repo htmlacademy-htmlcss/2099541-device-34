@@ -5,20 +5,30 @@
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: rubik;
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: Raleway;
-  font-style: bold;
+  font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
+
+:root {
+  --background-color-yellow: #FFE17F;
+  --background-color-white: #F0F0F0;
+  --background-color-lightgray: #EBEBEB;
+  --background-color-darkgray: #444444;
+}
+
 body {
  font-family: rubik, sans-serif, monospace;
  font-style: normal;
@@ -26,15 +36,18 @@ body {
  font-size: 18px;
  line-height: 30px;
  margin: 0;
- background-color: white;
+ background-color: var(--background-color-white);
  color: black;
 }
+
 .visually-hidden {
   visibility: hidden;
 }
+
 .page-header {
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
 }
+
 .page-header a {
   color: black;
 }
@@ -44,17 +57,12 @@ body {
 }
 
 .appointment-form-search {
-  background-image: url("/images/icons/vector-search.svg");
+  background-image: url("../images/icons/vector-search.svg");
   background-repeat: no-repeat;
-
 }
 
-ul.navigation-list li {
+li.navigation-item {
   display: inline-block;
-}
-ul.navigation-opportunities li {
-  display: inline-block;
-  margin: 35px;
 }
 
 .button-search {
@@ -65,7 +73,7 @@ ul.navigation-opportunities li {
 }
 
 .button-login {
-  background-image: url("/images/icons/vector-bust.svg");
+  background-image: url("../images/icons/vector-bust.svg");
   background-repeat: no-repeat;
 }
 
@@ -82,7 +90,7 @@ ul.navigation-opportunities li {
 }
 
 .button-compare {
-  background-image: url("/images/icons/vector-comparison.svg");
+  background-image: url("../images/icons/vector-comparison.svg");
   background-repeat: no-repeat;
 }
 
@@ -92,7 +100,7 @@ ul.navigation-opportunities li {
 }
 
 .button-basket {
-  background-image: url("/images/icons/vector-trashbasket.svg");
+  background-image: url("../images/icons/vector-trashbasket.svg");
   background-repeat: no-repeat;
 }
 
@@ -100,57 +108,63 @@ ul.navigation-opportunities li {
   font-size: 18px;
   line-height: 30px;
 }
+
 .navigation-catalog {
-font-family: Raleway, sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
 }
+
 .button-catalog-types {
   width: 50px;
   height: 50px;
 }
+
 .delivery-information-link {
-font-family: Raleway, sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
 }
+
 .warranty-information-link {
-font-family: Raleway, sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
 }
+
 .contacts-information-link {
-font-family: Raleway, sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
 }
 
 .slider-pagination-title {
-font-family: Raleway, sans-serif;
-font-style: 800;
-font-size: 50px;
-line-height: 50px;
-text-align: right;
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 50px;
+ line-height: 50px;
+ text-align: right;
 }
 
 .item-description {
@@ -160,15 +174,15 @@ text-align: right;
 }
 
 .item-link {
-font-family: Raleway,sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-vertical-align: top;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+ font-family: Raleway,sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ vertical-align: top;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
 }
 
 dt.main-characteristics-item {
@@ -196,54 +210,58 @@ ul.products-list li {
 }
 
 .vurtual-reality-link {
-  background-image: url("/images/product-types/virtual-reality-glasses.svg");
+  background-image: url("../images/product-types/virtual-reality-glasses.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: center;
-
 }
+
 .selfies-monopods-link {
-  background-image: url("/images/product-types/selfies-monopods.svg");
+  background-image: url("../images/product-types/selfies-monopods.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: bottom;
 }
+
 .action-cameras-link {
-  background-image: url("/images/product-types/action-cameras.svg");
+  background-image: url("../images/product-types/action-cameras.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: center;
 }
+
 .fitness-bracelet-link {
-  background-image: url("/images/product-types/fitness-bracelets.svg");
+  background-image: url("../images/product-types/fitness-bracelets.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: center;
 }
+
 .smart-watches-link {
-  background-image: url("/images/product-types/smart-watсhes.svg");
+  background-image: url("../images/product-types/smart-watсhes.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: center;
 }
+
 .drones-link {
-  background-image: url("/images/product-types/drones.svg");
+  background-image: url("../images/product-types/drones.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
   background-position: center;
 }
 
 p.products-title {
-font-family: Raleway,sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: -0.02em;
+ font-family: Raleway,sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 24px;
+ letter-spacing: -0.02em;
 }
 
 .buyers-information {
-  background-color: #F0F0F0;
+  background-color: var(--background-color-white);
 }
 
 .buyers-information-title {
@@ -270,34 +288,34 @@ letter-spacing: -0.02em;
 }
 
 .buyers-information-delivery {
-  background-image: url("/images/delivery_warranty_credit/delivery-man.svg");
+  background-image: url("../images/delivery_warranty_credit/delivery-man.svg");
   background-repeat: no-repeat;
   background-position: right;
   text-align: right;
 }
 
 .buyers-information-warranty {
-  background-image: url("/images/delivery_warranty_credit/warranty-tools.svg");
+  background-image: url("../images/delivery_warranty_credit/warranty-tools.svg");
   background-repeat: no-repeat;
   background-position: right;
   text-align: right;
 }
 
 .buyers-information-credit {
-  background-image: url("/images/delivery_warranty_credit/credit-man.svg");
+  background-image: url("../images/delivery_warranty_credit/credit-man.svg");
   background-repeat: no-repeat;
   background-position: right;
   text-align: right;
 }
 
 .about-delivery {
-  background-color: #F0F0F0;
+  background-color: var(--background-color-white);
 }
 
 .truck {
-  background-image: url("/images/icons/delivery-car.svg");
+  background-image: url("../images/icons/delivery-car.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
+  background-color: var(--background-color-yellow);
 }
 
 .product-under-the-order {
@@ -312,7 +330,7 @@ letter-spacing: -0.02em;
 }
 
 .delivery-form-link {
-  background-image: url("/images/icons/delivery-information.svg");
+  background-image: url("../images/icons/delivery-information.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -328,11 +346,12 @@ letter-spacing: -0.02em;
 .delivery-company-item {
   font-family: rubik, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
+
 a.more-information {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -360,10 +379,9 @@ a.more-information {
 .contacts-subtitle {
   font-family: rubik, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: right;
 }
 
 .contacts-address {
@@ -388,7 +406,7 @@ a.more-information {
 }
 
 .newsletter {
-  background-color: #F0F0F0;
+  background-color: var(--background-color-white);
 }
 
 .newsletter-title {
@@ -414,7 +432,7 @@ a.more-information {
 }
 
 .check-mark {
-  background-image: url("/images/icons/check-mark.svg");
+  background-image: url("../images/icons/check-mark.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -424,7 +442,7 @@ a.more-information {
 }
 
 .page-footer {
-  background-color: #444444;
+  background-color: var(--background-color-darkgray);
 }
 
 .contacts-address-text {
@@ -455,17 +473,20 @@ ul.socials li {
 }
 
 .button-telegram {
-  background-image: url("/images/icons/telegram.svg");
+  background-image: url("../images/icons/telegram.svg");
   background-repeat: no-repeat;
 }
+
 .button-youtube {
-  background-image: url("/images/icons/youtube.svg");
+  background-image: url("../images/icons/youtube.svg");
   background-repeat: no-repeat;
 }
+
 .button-twitter {
-  background-image: url("/images/icons/twitter.svg");
+  background-image: url("../images/icons/twitter.svg");
   background-repeat: no-repeat;
 }
+
 .htmlacademy-logo {
 text-align: right;
 }
@@ -494,7 +515,7 @@ ul.breadcrumbs li{
 }
 
 .catalog-products {
-  background-color: #F0F0F0;
+  background-color: var(--background-color-white);
 }
 
 .catalog-filter {
@@ -529,6 +550,7 @@ ul.breadcrumbs li{
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
 .select-control {
   font-family: rubik, sans-serif;
   font-style: normal;
@@ -538,13 +560,13 @@ ul.breadcrumbs li{
 }
 
 .button-up {
-  background-image: url("/images/icons/sort-up.svg");
+  background-image: url("../images/icons/sort-up.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
 }
 
 .button-down {
-  background-image: url("/images/icons/sort-down.svg");
+  background-image: url("../images/icons/sort-down.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
 }
@@ -579,7 +601,7 @@ ul.pagination-pages li {
 }
 
 .pagination-pages {
-  background-color: #EBEBEB;
+  background-color: var(--background-color-lightgray);
 }
 
 .pagination-back {
