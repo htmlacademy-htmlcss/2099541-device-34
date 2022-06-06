@@ -1,3 +1,638 @@
+@font-face {
+  font-family: rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --background-color-yellow: #FFE17F;
+  --background-color-white: #F0F0F0;
+  --background-color-lightgray: #EBEBEB;
+  --background-color-darkgray: #444444;
+}
+
 body {
-  background-color: tomato;
+ font-family: rubik, sans-serif, monospace;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 30px;
+ margin: 0;
+ background-color: var(--background-color-white);
+ color: black;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.page-header {
+  background-color: var(--background-color-yellow);
+}
+
+.page-header a {
+  color: black;
+}
+
+.main-index a {
+  color: black;
+}
+
+.appointment-form-search {
+  background-image: url("../images/icons/vector-search.svg");
+  background-repeat: no-repeat;
+}
+
+li.navigation-item {
+  display: inline-block;
+}
+
+.button-search {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-login {
+  background-image: url("../images/icons/vector-bust.svg");
+  background-repeat: no-repeat;
+}
+
+.button-login-field {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.navigation-item-logoff {
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.button-compare {
+  background-image: url("../images/icons/vector-comparison.svg");
+  background-repeat: no-repeat;
+}
+
+.button-compare-field {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.button-basket {
+  background-image: url("../images/icons/vector-trashbasket.svg");
+  background-repeat: no-repeat;
+}
+
+.button-basket-field {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.navigation-catalog {
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+.button-catalog-types {
+  width: 50px;
+  height: 50px;
+}
+
+.delivery-information-link {
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+.warranty-information-link {
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+.contacts-information-link {
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+.slider-pagination-title {
+ font-family: Raleway, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 50px;
+ line-height: 50px;
+ text-align: right;
+}
+
+.item-description {
+ font-size: 18px;
+ Line-height: 30px;
+ text-align: right;
+}
+
+.item-link {
+ font-family: Raleway,sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ vertical-align: top;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+dt.main-characteristics-item {
+ font-size: 16px;
+ line-height: 30px;
+ text-align: right;
+}
+
+dd.amount {
+ font-size: 36px;
+ Line-height: 30px;
+ text-align: right;
+}
+
+dd.material-type {
+  font-size: 36px;
+  Line-height: 30px;
+  text-align: right;
+ }
+
+ul.products-list li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 70px;
+}
+
+.vurtual-reality-link {
+  background-image: url("../images/product-types/virtual-reality-glasses.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+}
+
+.selfies-monopods-link {
+  background-image: url("../images/product-types/selfies-monopods.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: bottom;
+}
+
+.action-cameras-link {
+  background-image: url("../images/product-types/action-cameras.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+}
+
+.fitness-bracelet-link {
+  background-image: url("../images/product-types/fitness-bracelets.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+}
+
+.smart-watches-link {
+  background-image: url("../images/product-types/smart-watсhes.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+}
+
+.drones-link {
+  background-image: url("../images/product-types/drones.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+}
+
+p.products-title {
+ font-family: Raleway,sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 24px;
+ letter-spacing: -0.02em;
+}
+
+.buyers-information {
+  background-color: var(--background-color-white);
+}
+
+.buyers-information-title {
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: right;
+}
+
+.description {
+  text-align: right;
+}
+
+.buyers-information-button {
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.buyers-information-delivery {
+  background-image: url("../images/delivery_warranty_credit/delivery-man.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: right;
+}
+
+.buyers-information-warranty {
+  background-image: url("../images/delivery_warranty_credit/warranty-tools.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: right;
+}
+
+.buyers-information-credit {
+  background-image: url("../images/delivery_warranty_credit/credit-man.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: right;
+}
+
+.about-delivery {
+  background-color: var(--background-color-white);
+}
+
+.truck {
+  background-image: url("../images/icons/delivery-car.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+}
+
+.product-under-the-order {
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.delivery-form-link {
+  background-image: url("../images/icons/delivery-information.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about-title {
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.delivery-company-item {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+a.more-information {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contacts-title, .contacts-link {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: right;
+}
+
+.contacts-phrase {
+  text-align: right;
+}
+
+.contacts-subtitle {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contacts-address {
+  font-style: normal;
+  text-align: right;
+}
+
+.contacts-schedule {
+  text-align: right;
+}
+
+.text-us {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 634px;
+}
+
+.newsletter {
+  background-color: var(--background-color-white);
+}
+
+.newsletter-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.newsletter-description {
+  text-align: right;
+}
+
+.newsletter-button {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.check-mark {
+  background-image: url("../images/icons/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.simple-description {
+  text-align: right;
+}
+
+.page-footer {
+  background-color: var(--background-color-darkgray);
+}
+
+.contacts-address-text {
+  color: white;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts-phone {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-footer a {
+  color: white;
+}
+
+ul.footer-navigation-list li {
+  display: inline;
+  margin: 35px;
+}
+
+ul.socials li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.button-telegram {
+  background-image: url("../images/icons/telegram.svg");
+  background-repeat: no-repeat;
+}
+
+.button-youtube {
+  background-image: url("../images/icons/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.button-twitter {
+  background-image: url("../images/icons/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.htmlacademy-logo {
+text-align: right;
+}
+
+a.product-card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.inner-header-title-lvl2 {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+ul.breadcrumbs li{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.catalog-products {
+  background-color: var(--background-color-white);
+}
+
+.catalog-filter {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button-show-more {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.select-control {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.button-up {
+  background-image: url("../images/icons/sort-up.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.button-down {
+  background-image: url("../images/icons/sort-down.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.product-card-title {
+  font-family: rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.download-more {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+ul.pagination-pages li {
+  display: inline-block;
+}
+
+.pagination-pages {
+  background-color: var(--background-color-lightgray);
+}
+
+.pagination-back {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+.pagination-forward {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #444444;
+  opacity: 0.3;
 }
