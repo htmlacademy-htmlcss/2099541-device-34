@@ -22,30 +22,50 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 :root {
   --background-color-yellow: #FFE17F;
-  --background-color-white: #F0F0F0;
+  --background-color-white: #FFFFFF;
   --background-color-lightgray: #EBEBEB;
   --background-color-darkgray: #444444;
+  --background-color-matte: #F0F0F0;
 }
 
 body {
- font-family: rubik, sans-serif, monospace;
- font-style: normal;
- font-weight: 400;
- font-size: 18px;
- line-height: 30px;
- margin: 0;
- background-color: var(--background-color-white);
- color: black;
+  font-family: rubik, sans-serif, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--background-color-white);
+  color: black;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
   visibility: hidden;
 }
 
-.page-header {
+.header-container {
+  width: 1160px;
+  margin: 0 auto;
   background-color: var(--background-color-yellow);
+}
+
+.device-logo {
+  display: block;
+  margin-left: 60px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-header a {
@@ -59,16 +79,50 @@ body {
 .appointment-form-search {
   background-image: url("../images/icons/vector-search.svg");
   background-repeat: no-repeat;
+  margin-left: 60px;
 }
 
 li.navigation-item {
   display: inline-block;
 }
 
+.navigation {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 517px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-login {
+  width: 231px;
+  margin-left: 26px;
+  padding: 0;
+}
+
+.navigation-purchase {
+  width: 240px;
+  margin-left: auto;
+}
+
+.navigation-list-2 {
+  width: 293px;
+  margin-left: 60px;
+  padding: 0;
+}
+
+.navigation-opportunities {
+  max-width: 471px;
+  margin-left: auto;
+}
+
 .button-search {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -109,15 +163,15 @@ li.navigation-item {
   line-height: 30px;
 }
 
-.navigation-catalog {
- font-family: Raleway, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 21px;
- letter-spacing: 0.2em;
- text-transform: uppercase;
- text-decoration: none;
+.navigation-catalog-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button-catalog-types {
@@ -126,200 +180,288 @@ li.navigation-item {
 }
 
 .delivery-information-link {
- font-family: Raleway, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 21px;
- letter-spacing: 0.2em;
- text-transform: uppercase;
- text-decoration: none;
-}
-
-.warranty-information-link {
- font-family: Raleway, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 21px;
- letter-spacing: 0.2em;
- text-transform: uppercase;
- text-decoration: none;
-}
-
-.contacts-information-link {
- font-family: Raleway, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 21px;
- letter-spacing: 0.2em;
- text-transform: uppercase;
- text-decoration: none;
-}
-
-.slider-pagination-title {
- font-family: Raleway, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 50px;
- line-height: 50px;
- text-align: right;
-}
-
-.item-description {
- font-size: 18px;
- Line-height: 30px;
- text-align: right;
-}
-
-.item-link {
- font-family: Raleway,sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 21px;
- vertical-align: top;
- letter-spacing: 0.2em;
- text-transform: uppercase;
- text-decoration: none;
-}
-
-dt.main-characteristics-item {
- font-size: 16px;
- line-height: 30px;
- text-align: right;
-}
-
-dd.amount {
- font-size: 36px;
- Line-height: 30px;
- text-align: right;
-}
-
-dd.material-type {
-  font-size: 36px;
-  Line-height: 30px;
-  text-align: right;
- }
-
-ul.products-list li {
-  display: inline-block;
-  margin-right: 40px;
-  margin-top: 70px;
-}
-
-.vurtual-reality-link {
-  background-image: url("../images/product-types/virtual-reality-glasses.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: center;
-}
-
-.selfies-monopods-link {
-  background-image: url("../images/product-types/selfies-monopods.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: bottom;
-}
-
-.action-cameras-link {
-  background-image: url("../images/product-types/action-cameras.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: center;
-}
-
-.fitness-bracelet-link {
-  background-image: url("../images/product-types/fitness-bracelets.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: center;
-}
-
-.smart-watches-link {
-  background-image: url("../images/product-types/smart-watсhes.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: center;
-}
-
-.drones-link {
-  background-image: url("../images/product-types/drones.svg");
-  background-repeat: no-repeat;
-  background-color: var(--background-color-yellow);
-  background-position: center;
-}
-
-p.products-title {
- font-family: Raleway,sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 24px;
- letter-spacing: -0.02em;
-}
-
-.buyers-information {
-  background-color: var(--background-color-white);
-}
-
-.buyers-information-title {
-  font-family: Raleway,sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  text-align: right;
-}
-
-.description {
-  text-align: right;
-}
-
-.buyers-information-button {
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 47px;
+}
+
+.warranty-information-link {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 51px;
+}
+
+.contacts-information-link {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo-slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-pagination-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-pagination-button {
+  order: 1;
+}
+
+.drone-01 {
+  display: block;
+  margin-left: 0;
+}
+
+.discription-conteiner {
+  width: 560px;
+}
+
+.slider-pagination-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: left;
+}
+
+.item-description {
+  font-size: 18px;
+  Line-height: 30px;
+  text-align: left;
+}
+
+.item-link {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-characteristics {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.characteristics-conteiner {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+dt.main-characteristics-item {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+dd.amount {
+  font-size: 36px;
+  Line-height: 30px;
+}
+
+dd.material-type {
+  font-size: 36px;
+  Line-height: 30px;
+}
+
+.gallery-products {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  list-style-type: none;
+}
+
+.products-list-item {
+  width: 160px;
+}
+
+.vurtual-reality-link {
+  display: block;
+  background-image: url("../images/product-types/virtual-reality-glasses.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+  height: 160px;
+
+}
+
+.selfies-monopods-link {
+  display: block;
+  background-image: url("../images/product-types/selfies-monopods.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: bottom;
+  height: 160px;
+}
+
+.action-cameras-link {
+  display: block;
+  background-image: url("../images/product-types/action-cameras.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+  height: 160px;
+}
+
+.fitness-bracelet-link {
+  display: block;
+  background-image: url("../images/product-types/fitness-bracelets.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+  height: 160px;
+}
+
+.smart-watches-link {
+  display: block;
+  background-image: url("../images/product-types/smart-watсhes.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+  height: 160px;
+}
+
+.drones-link {
+  display: block;
+  background-image: url("../images/product-types/drones.svg");
+  background-repeat: no-repeat;
+  background-color: var(--background-color-yellow);
+  background-position: center;
+  height: 160px;
+}
+
+p.products-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.buyers-information {
+  background-color: var(--background-color-matte);
+}
+
+.buyers-information-section {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.buyers-information-pagination-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyers-information-title-container {
+  margin-left: 116px;
+}
+
+.buyers-information-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+}
+
+.buyers-information-button {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 280px;
 }
 
 .buyers-information-delivery {
   background-image: url("../images/delivery_warranty_credit/delivery-man.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  text-align: right;
+  width: 136px;
+  margin-right: 63px;
+  background-position: center;
 }
 
 .buyers-information-warranty {
   background-image: url("../images/delivery_warranty_credit/warranty-tools.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  text-align: right;
+  width: 171px;
+  margin-right: 63px;
+  background-position: center;
 }
 
 .buyers-information-credit {
   background-image: url("../images/delivery_warranty_credit/credit-man.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  text-align: right;
+  width: 156px;
+  margin-right: 63px;
+  background-position: 100%;
 }
 
 .about-delivery {
-  background-color: var(--background-color-white);
+  background-color: var(--background-color-matte);
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.delivery-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .truck {
   background-image: url("../images/icons/delivery-car.svg");
   background-repeat: no-repeat;
   background-color: var(--background-color-yellow);
+  width: 125px;
+  background-position: center;
 }
 
 .product-under-the-order {
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -327,16 +469,29 @@ p.products-title {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
+  width: 910px;
 }
 
 .delivery-form-link {
   background-image: url("../images/icons/delivery-information.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  width: 125px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-us {
+  width: 520px;
+  text-align: left;
 }
 
 .about-title {
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -363,17 +518,17 @@ a.more-information {
   text-decoration: none;
 }
 
-.contacts-title, .contacts-link {
+.contacts {
+  width: 532px;
+  text-align: left;
+}
+
+.contacts-link {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  text-align: right;
-}
-
-.contacts-phrase {
-  text-align: right;
 }
 
 .contacts-subtitle {
@@ -386,11 +541,11 @@ a.more-information {
 
 .contacts-address {
   font-style: normal;
-  text-align: right;
 }
 
 .contacts-schedule {
-  text-align: right;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .text-us {
@@ -402,11 +557,32 @@ a.more-information {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 634px;
 }
 
 .newsletter {
-  background-color: var(--background-color-white);
+  background-color: var(--background-color-matte);
+}
+
+.newsletter-conteiner {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-title {
+  width: 355px;
+  margin-right: 252px;
+}
+
+.newsletter-description {
+  width: 553px;
+  text-align: left;
+}
+
+.subscription-form {
+  display: flex;
+  margin-right: 188px;
 }
 
 .newsletter-title {
@@ -415,10 +591,6 @@ a.more-information {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-}
-
-.newsletter-description {
-  text-align: right;
 }
 
 .newsletter-button {
@@ -434,7 +606,8 @@ a.more-information {
 .check-mark {
   background-image: url("../images/icons/check-mark.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
+  display: flex;
 }
 
 .simple-description {
@@ -445,7 +618,7 @@ a.more-information {
   background-color: var(--background-color-darkgray);
 }
 
-.contacts-address-text {
+.contacts-address-text-footer {
   color: white;
   font-style: normal;
   font-size: 16px;
@@ -458,42 +631,74 @@ a.more-information {
   line-height: 20px;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-address {
+  width: 234px;
+  margin-right: 124px;
+}
+
+.footer-navigation-list li {
+  display: inline-block;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.footer-phone {
+  width: 175px;
+  margin-left: auto;
+}
+
 .page-footer a {
   color: white;
-}
-
-ul.footer-navigation-list li {
-  display: inline;
-  margin: 35px;
-}
-
-ul.socials li {
-  display: inline;
-  margin-right: 15px;
 }
 
 .button-telegram {
   background-image: url("../images/icons/telegram.svg");
   background-repeat: no-repeat;
+  width: 40px;
 }
 
 .button-youtube {
   background-image: url("../images/icons/youtube.svg");
   background-repeat: no-repeat;
+  width: 40px;
 }
 
 .button-twitter {
   background-image: url("../images/icons/twitter.svg");
   background-repeat: no-repeat;
+  width: 40px;
 }
 
 .htmlacademy-logo {
-text-align: right;
+  text-align: right;
 }
 
 a.product-card-link {
   text-decoration: none;
   color: black;
+}
+
+.main-inner {
+  background-color: var(--background-color-matte);
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.inner-header {
+  background-color: var(--background-color-white);
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header-title-lvl2 {
@@ -504,7 +709,7 @@ a.product-card-link {
   line-height: 50px;
 }
 
-ul.breadcrumbs li{
+ul.breadcrumbs li {
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
@@ -515,7 +720,8 @@ ul.breadcrumbs li{
 }
 
 .catalog-products {
-  background-color: var(--background-color-white);
+  background-color: var(--background-color-matte);
+  display: flex;
 }
 
 .catalog-filter {
@@ -525,6 +731,11 @@ ul.breadcrumbs li{
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+}
+
+.catalog-filter-form {
+  width: 220px;
+  margin-right: 40px;
 }
 
 .catalog-filter-title {
@@ -551,6 +762,16 @@ ul.breadcrumbs li{
   letter-spacing: 0.2em;
 }
 
+.catalor-right-column {
+  background-color: var(--background-color-white);
+  width: 840px;
+}
+
+.sorting-container {
+  background-color: var(--background-color-matte);
+  display: flex;
+}
+
 .select-control {
   font-family: rubik, sans-serif;
   font-style: normal;
@@ -569,6 +790,10 @@ ul.breadcrumbs li{
   background-image: url("../images/icons/sort-down.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+.product-list {
+  background-color: var(--background-color-white)
 }
 
 .product-card-title {
@@ -596,12 +821,15 @@ ul.breadcrumbs li{
   letter-spacing: 0.2em;
 }
 
-ul.pagination-pages li {
-  display: inline-block;
+.pagination-pages {
+  width: 760px;
+  background-color: var(--background-color-lightgray);
+  margin: 0 auto;
+  padding: 0;
 }
 
-.pagination-pages {
-  background-color: var(--background-color-lightgray);
+.pagination-pages li {
+  display: inline-block;
 }
 
 .pagination-back {
