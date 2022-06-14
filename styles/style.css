@@ -686,8 +686,19 @@ a.product-card-link {
   color: black;
 }
 
+.main-inner {
+  background-color: var(--background-color-matte);
+}
+
 .page-container {
   width: 1160px;
+  margin: 0 auto;
+}
+
+.inner-header {
+  background-color: var(--background-color-white);
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header-title-lvl2 {
