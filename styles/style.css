@@ -147,6 +147,7 @@ input[type=text] {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  justify-content: space-between;
 }
 
 .navigation-login-item {
@@ -160,7 +161,7 @@ input[type=text] {
   background-repeat: no-repeat;
   width: 13px;
   min-height: 30px;
-  padding: 9px 13px 9px 0px;
+  padding: 9px 13px 9px 0;
   background-position: center;
 }
 
@@ -202,7 +203,7 @@ input[type=text] {
   background-repeat: no-repeat;
   width: 10px;
   min-height: 12px;
-  padding: 9px 12px 9px 0px;
+  padding: 9px 12px 9px 0;
   background-position: center;
 }
 
@@ -221,7 +222,7 @@ input[type=text] {
   background-repeat: no-repeat;
   width: 16px;
   min-height: 14px;
-  padding: 6px 12px 10px 0px;
+  padding: 6px 12px 10px 0;
   background-position: center;
 }
 
@@ -269,7 +270,7 @@ input[type=text] {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  padding: 15px 7px 15px 0px;
+  padding: 15px 7px 15px 0;
 }
 
 .button-catalog-types {
@@ -537,6 +538,7 @@ p.products-title {
 
 .buyers-information-container {
   display: flex;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
   min-height: 319px;
@@ -549,8 +551,10 @@ p.products-title {
 }
 
 .buyers-information-pagination {
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-left: 116px;
 }
 
 .buyers-information-pagination-item {
@@ -562,11 +566,8 @@ p.products-title {
   width: 448px;
   min-height: 174px;
   margin: 0;
-  margin-left: 116px;
   padding: 0;
-
 }
-
 .buyers-information-button {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -1056,18 +1057,15 @@ a.product-card-link {
   color: black;
 }
 
-.main-inner {
-  background-color: var(--background-color-matte);
-}
-
 .main-inner-container {
-  width: 1160px;
   margin: 0 auto;
 }
 
 .inner-header {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   background-color: var(--background-color-white);
-  margin: 0;
   padding: 0;
 }
 
@@ -1077,21 +1075,46 @@ a.product-card-link {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 35px 0 16px 60px;
+  padding: 0;
 }
 
-ul.breadcrumbs li {
-  display: inline-block;
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
   font-size: 16px;
   line-height: 19px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 36px;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
 }
 
-.catalog-products {
+.catalog-products-container {
   background-color: var(--background-color-matte);
+}
+
+.catalog-products {
+  width: 1160px;
+  margin: 0 auto;
   display: flex;
+}
+
+.catalog-container {
+  margin-left: 60px;
 }
 
 .catalog-filter {
@@ -1101,6 +1124,10 @@ ul.breadcrumbs li {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter-form {
@@ -1130,6 +1157,10 @@ ul.breadcrumbs li {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  padding: 0;
+  margin-top: 45px;
+  width: 210px;
+  min-height: 20px;
 }
 
 .catalor-right-column {
@@ -1140,30 +1171,72 @@ ul.breadcrumbs li {
 .sorting-container {
   background-color: var(--background-color-matte);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sorting-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .select-control {
+  display: block;
   font-family: rubik, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  max-height: 30px;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60px;
+  min-height: 30px;
+  margin-right: 40px;
 }
 
 .button-up {
+  display: block;
   background-image: url("../images/icons/sort-up.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
+  width: 11px;
+  min-height: 10px;
+  padding: 10px 9px 10px 9px;
+  background-position: center;
 }
 
 .button-down {
+  display: block;
   background-image: url("../images/icons/sort-down.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
+  width: 11px;
+  min-height: 10px;
+  padding: 10px 9px 10px 9px;
+  background-position: center;
 }
 
 .product-list {
-  background-color: var(--background-color-white)
+  background-color: var(--background-color-white);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 70px;
+  margin-left: 40px;
 }
 
 .product-card-title {
@@ -1189,17 +1262,27 @@ ul.breadcrumbs li {
   line-height: 19px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  margin: 44px 40px 44px 40px;
+  padding: 18px 290px 18px 290px;
+  border: 3px solid #E5E5E5;
+  background-color: var(--background-color-white);
+}
+
+.pagination-pages-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 78px;
+  justify-content: space-between;
 }
 
 .pagination-pages {
+  display: flex;
   width: 760px;
   background-color: var(--background-color-lightgray);
   margin: 0 auto;
-  padding: 0;
-}
-
-.pagination-pages li {
-  display: inline-block;
+  padding: 15px 145px 15px 145px;
+  list-style-type: none;
 }
 
 .pagination-back {
@@ -1211,6 +1294,10 @@ ul.breadcrumbs li {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: black;
+  margin-left: 40px;
+  padding: 25px;
+  border: none;
+  background-color: var(--background-color-lightgray);
 }
 
 .pagination-forward {
@@ -1222,6 +1309,10 @@ ul.breadcrumbs li {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: black;
+  margin-right: 40px;
+  padding: 25px;
+  border: none;
+  background-color: var(--background-color-lightgray);
 }
 
 .pagination-item {
@@ -1230,7 +1321,28 @@ ul.breadcrumbs li {
 }
 
 .pagination-link {
+  display: block;
   text-decoration: none;
   color: #444444;
   opacity: 0.3;
+}
+
+.first-pages {
+  padding: 10px 16px 10px 16px;
+}
+
+.second-pages {
+  padding: 10px 15px 10px 15px;
+}
+
+.third-pages {
+  padding: 10px 15px 10px 15px;
+}
+
+.pagination-pages-adder {
+  padding: 10px 14px 10px 14px;
+}
+
+.fifthteen-pages {
+  padding: 10px 11px 10px 11px;
 }
