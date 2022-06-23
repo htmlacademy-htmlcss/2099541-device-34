@@ -32,6 +32,9 @@ html {
   --background-color-lightgray: #EBEBEB;
   --background-color-darkgray: #444444;
   --background-color-matte: #F0F0F0;
+  --background-color-black: #000000;
+  --background-color-gray: #C4C4C4;
+  --background-color-verylightgray: #E5E5E5;
 }
 
 body {
@@ -45,7 +48,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: var(--background-color-white);
-  color: black;
+  color: var(--background-color-black);
   box-sizing: border-box;
 }
 
@@ -60,10 +63,17 @@ body {
   overflow: hidden;
 }
 
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .header-container {
   width: 1160px;
   background-color: var(--background-color-yellow);
   margin: 0 auto;
+  min-height: 186px;
 }
 
 .device-logo {
@@ -78,15 +88,16 @@ body {
 }
 
 .page-header a {
-  color: black;
+  color: var(--background-color-black);
 }
 
 .main-index a {
-  color: black;
+  color: var(--background-color-black);
 }
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   justify-content: space-between;
 }
@@ -96,17 +107,14 @@ body {
   flex-wrap: wrap;
   max-width: 600px;
   min-height: 40px;
-  margin: 0;
-  padding: 0;
   margin-left: 60px;
-  list-style-type: none;
   justify-content: space-between;
 }
 
 .appointment-form-container {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid #000000;
+  border: 2px solid var(--background-color-black);
   border-radius: 50px 50px 50px 50px;
 }
 
@@ -137,16 +145,13 @@ input[type=text] {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  border-left: 2px solid #000000;
+  border-left: 2px solid var(--background-color-black);
 }
 
 .navigation-login {
   display: flex;
   flex-wrap: wrap;
   width: 231px;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   justify-content: space-between;
 }
 
@@ -167,7 +172,7 @@ input[type=text] {
 
 .button-login-field {
   display: block;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -187,9 +192,11 @@ input[type=text] {
   display: flex;
   flex-wrap: wrap;
   width: 240px;
+  min-height: 40px;
+  margin-left: 60px;
+  justify-content: space-between;
   margin: 0;
   margin-right: 60px;
-  padding: 0;
 }
 
 .navigation-purchase-item {
@@ -208,7 +215,7 @@ input[type=text] {
 }
 
 .button-compare-field {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -227,7 +234,7 @@ input[type=text] {
 }
 
 .button-basket-field {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -235,20 +242,19 @@ input[type=text] {
   padding: 0;
 }
 
-.navigation-2 {
+.sub-navigation {
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
-.navigation-list-2 {
+.sub-navigation-list {
   display: flex;
   flex-wrap: wrap;
   width: 293px;
   margin-left: 60px;
-  padding: 0;
-  list-style-type: none;
 }
 
 .navigation-item {
@@ -283,7 +289,6 @@ input[type=text] {
   flex-wrap: wrap;
   max-width: 472px;
   margin-right: 60px;
-  padding: 0;
 }
 
 .delivery-information-link {
@@ -370,7 +375,7 @@ input[type=text] {
   margin-bottom: 30px;
 }
 
-.item-description {
+.item-discription {
   font-size: 18px;
   Line-height: 30px;
   text-align: left;
@@ -455,12 +460,9 @@ dd.material-type {
 }
 
 .products-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   text-align: left;
-  list-style-type: none;
 }
 
 .products-list-item {
@@ -552,8 +554,6 @@ p.products-title {
 
 .buyers-information-pagination {
   display: flex;
-  margin: 0;
-  padding: 0;
   margin-left: 116px;
 }
 
@@ -584,7 +584,7 @@ p.products-title {
 .button-delivery-current {
   margin-bottom: 35px;
   color: var(--background-color-yellow);
-  background-color: black;
+  background-color: var(--background-color-black);
 }
 
 .button-warranty {
@@ -603,7 +603,7 @@ p.products-title {
   margin-bottom: 34px;
 }
 
-.description {
+.discription {
   text-align: left;
 }
 
@@ -643,9 +643,6 @@ p.products-title {
 .delivery-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .truck {
@@ -796,10 +793,7 @@ a.more-information {
 }
 
 .contacts-schedule {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .text-us {
@@ -838,7 +832,7 @@ a.more-information {
   margin-bottom: 144px;
 }
 
-.newsletter-description {
+.newsletter-discription {
   width: 553px;
   text-align: left;
   margin-top: 74px;
@@ -852,14 +846,14 @@ a.more-information {
 }
 
 input[type=email] {
-  font-family: Rubik;
-  font-style: Regular;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 30px;
   width: 557px;
   height: 55px;
   border: none;
-  border-bottom: 3px solid #C4C4C4;
+  border-bottom: 3px solid var(--background-color-gray);
   background-color: var(--background-color-matte);
   padding-left: 16px;
 }
@@ -873,7 +867,7 @@ input[type=email] {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 18px 39px 18px 39px;
-  border: 3px solid #C4C4C4;
+  border: 3px solid var(--background-color-gray);
   margin-left: -5px;
 }
 
@@ -895,7 +889,7 @@ input[type=email] {
 
 }
 
-.simple-description {
+.simple-discription {
   display: block;
   margin: 0;
 }
@@ -924,7 +918,7 @@ input[type=email] {
 }
 
 .contacts-address-text-footer {
-  color: white;
+  color: var(--background-color-white);
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -988,9 +982,6 @@ input[type=email] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   margin-bottom: 62px;
 }
 
@@ -1005,7 +996,6 @@ input[type=email] {
   justify-content: space-between;
   width: 150px;
   margin: 0 auto;
-  padding: 0;
   margin-bottom: 61px;
 }
 
@@ -1019,7 +1009,7 @@ input[type=email] {
 }
 
 .page-footer a {
-  color: white;
+  color: var(--background-color-white);
 }
 
 .button-telegram {
@@ -1054,7 +1044,7 @@ input[type=email] {
 
 a.product-card-link {
   text-decoration: none;
-  color: black;
+  color: var(--background-color-black);
 }
 
 .main-inner-container {
@@ -1082,10 +1072,7 @@ a.product-card-link {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-left: 60px;
-  padding: 0;
-  list-style-type: none;
 }
 
 .breadcrumbs-item {
@@ -1176,7 +1163,7 @@ a.product-card-link {
 }
 
 .sorting-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1232,9 +1219,6 @@ a.product-card-link {
 
 .product-list {
   background-color: var(--background-color-white);
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-top: 70px;
   margin-left: 40px;
 }
@@ -1264,7 +1248,7 @@ a.product-card-link {
   letter-spacing: 0.2em;
   margin: 44px 40px 44px 40px;
   padding: 18px 290px 18px 290px;
-  border: 3px solid #E5E5E5;
+  border: 3px solid var(--background-color-verylightgray);
   background-color: var(--background-color-white);
 }
 
@@ -1282,7 +1266,6 @@ a.product-card-link {
   background-color: var(--background-color-lightgray);
   margin: 0 auto;
   padding: 15px 145px 15px 145px;
-  list-style-type: none;
 }
 
 .pagination-back {
@@ -1293,7 +1276,7 @@ a.product-card-link {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: black;
+  color: var(--background-color-black);
   margin-left: 40px;
   padding: 25px;
   border: none;
@@ -1308,7 +1291,7 @@ a.product-card-link {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: black;
+  color: var(--background-color-black);
   margin-right: 40px;
   padding: 25px;
   border: none;
@@ -1323,7 +1306,7 @@ a.product-card-link {
 .pagination-link {
   display: block;
   text-decoration: none;
-  color: #444444;
+  color: var(--background-color-darkgray);
   opacity: 0.3;
 }
 
