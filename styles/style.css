@@ -74,13 +74,18 @@ body {
   background-color: var(--background-color-yellow);
   margin: 0 auto;
   min-height: 186px;
+  margin-top: 40px;
+}
+
+.header-container-index {
+  padding-bottom: 135px;
 }
 
 .device-logo {
   display: block;
   margin-left: 60px;
   margin-bottom: 30px;
-  margin-top: 20px;
+  max-height: 36px;
 }
 
 .main-container {
@@ -223,15 +228,23 @@ input[type=text] {
   padding: 0;
 }
 
+.button-basket::before {
+  display: block;
+  padding-top: 15px;
+  content: url("../images/icons/vector-twopurchases.svg");
+}
+
 .button-basket {
   display: block;
   background-image: url("../images/icons/vector-trashbasket.svg");
   background-repeat: no-repeat;
-  width: 16px;
+  width: 31px;
   min-height: 14px;
   padding: 6px 12px 10px 0;
   background-position: center;
 }
+
+
 
 .button-basket-field {
   font-family: 'Rubik', sans-serif;
@@ -337,6 +350,11 @@ input[type=text] {
 .promo-slider {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.slider {
+  margin: 0;
 }
 
 .slider-pagination {
@@ -355,13 +373,59 @@ input[type=text] {
   order: 1;
 }
 
-.drone-01 {
+.drone-01,
+.fitness-bracelet-02,
+.selfie-stick-03 {
   margin: 0;
+  margin-top: -180px;
 }
 
 .discription-conteiner {
   width: 560px;
   margin-left: 40px;
+  margin-top: -103px;
+}
+
+.conteiner-selfie-stick {
+  margin-top: -105px;
+}
+
+.conteiner-drone::before {
+  display: block;
+  content: "01";
+  margin-left: 300px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: var(--background-color-white);
+}
+
+.conteiner-fitness-bracelet::before {
+  display: block;
+  content: "02";
+  margin-left: 270px;
+  margin-top: 5px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: var(--background-color-white);
+}
+
+.conteiner-selfie-stick::before {
+  display: block;
+  content: "03";
+  margin-left: 270px;
+  margin-top: 5px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: var(--background-color-white);
 }
 
 .slider-pagination-title {
@@ -373,6 +437,18 @@ input[type=text] {
   text-align: left;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.pagination-title-drone {
+  margin-top: 14px;
+}
+
+.pagination-title-fitness-bracelet {
+  margin-top: 10px;
+}
+
+.pagination-title-selfie-stick {
+  margin-top: 11px;
 }
 
 .item-discription {
@@ -467,6 +543,7 @@ dd.material-type {
 
 .products-list-item {
   width: 160px;
+  margin-bottom: 134px;
 }
 
 .vurtual-reality-link {
@@ -550,11 +627,13 @@ p.products-title {
   width: 287px;
   max-height: 319px;
   margin: 0;
+  margin-top: -40px;
 }
 
 .buyers-information-pagination {
   display: flex;
   margin-left: 116px;
+  margin-top: -25px;
 }
 
 .buyers-information-pagination-item {
@@ -1035,7 +1114,6 @@ input[type=email] {
 
 .footer-contacts-address {
   margin-bottom: 63px;
-
 }
 
 .htmlacademy-logo {
@@ -1045,6 +1123,10 @@ input[type=email] {
 a.product-card-link {
   text-decoration: none;
   color: var(--background-color-black);
+}
+
+.header-container-catalog {
+  padding-bottom: 23px;
 }
 
 .main-inner-container {
@@ -1221,6 +1303,27 @@ a.product-card-link {
   background-color: var(--background-color-white);
   margin-top: 70px;
   margin-left: 40px;
+  margin-bottom: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
+
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.product-card-link {
+  max-height: 380px;
+}
+
+.product-card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
 }
 
 .product-card-title {
@@ -1231,6 +1334,8 @@ a.product-card-link {
   line-height: 20px;
   letter-spacing: -0.02em;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-price {
@@ -1246,7 +1351,7 @@ a.product-card-link {
   line-height: 19px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin: 44px 40px 44px 40px;
+  margin: 0 40px 44px 40px;
   padding: 18px 290px 18px 290px;
   border: 3px solid var(--background-color-verylightgray);
   background-color: var(--background-color-white);
