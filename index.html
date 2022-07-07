@@ -11,9 +11,11 @@
     <header class="page-header">
       <div class="header-container header-container-index wrapper">
         <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
-        <a class="device-logo device-logo-header" href="#">
-          <img src="images/logo/device-black.svg" width="145" height="36" alt="Логотип интернет-магазина device.">
-        </a>
+        <div class="device-logo-header-container">
+          <a class="device-logo device-logo-header" href="#">
+            <img src="images/logo/device-black.svg" width="145" height="36" alt="Логотип интернет-магазина device.">
+          </a>
+        </div>
         <nav class="navigation">
           <ul class="navigation-list reset-list">
             <li class="navigation-item">
@@ -88,10 +90,10 @@
             <span class="visually-hidden">Промо-слайдер</span>
           </h2>
           <img class="slider-img" src="#" alt="Промо-слайдер.">
-          <button class="slider-button slider-prev" type="button">
+          <button class="slider-button slider-prev button" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <button class="slider-button slider-next" type="button">
+          <button class="slider-button slider-next button" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
           <ol class="slider-pagination">
@@ -107,7 +109,7 @@
                   <div class="link-container">
                     <a class="item-link" href="catalog.html">Подробнее</a>
                   </div>
-                  <button class="slider-pagination-button slider-pagination-button-current">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
                     <span class="visually-hidden"> 1 фото(дрон-убийца)</span>
                   </button>
                 </div>
@@ -134,7 +136,7 @@
                   <div class="link-container">
                     <a class="item-link" href="catalog.html">Подробнее</a>
                   </div>
-                  <button class="slider-pagination-button slider-pagination-button-second">
+                  <button class="slider-pagination-button slider-pagination-button-second" type="button">
                     <span class="visually-hidden">2 фото(Фитнес-браслет)</span>
                   </button>
                 </div>
@@ -157,7 +159,7 @@
                   <div class="link-container">
                     <a class="item-link" href="catalog.html">Подробнее</a>
                   </div>
-                  <button class="slider-pagination-button slider-pagination-button">
+                  <button class="slider-pagination-button slider-pagination-button" type="button">
                     <span class="visually-hidden">3 фото(селфи-палка)</span>
                   </button>
                 </div>
@@ -186,45 +188,45 @@
           </h2>
           <ul class="products-list reset-list">
             <li class="products-list-item">
-              <a class="vurtual-reality-link" href="catalog.html">
+              <a class="vurtual-reality-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Виртуальная реальность</span>
+                <p class="products-title">Виртуальная<br>реальность</p>
               </a>
-              <p class="products-title">Виртуальная<br>реальность</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
-              <a class="selfies-monopods-link" href="catalog.html">
+              <a class="selfies-monopods-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Моноподы для селфи</span>
+                <p class="products-title">Моноподы<br>для селфи</p>
               </a>
-              <p class="products-title">Моноподы<br>для селфи</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
-              <a class="action-cameras-link" href="catalog.html">
+              <a class="action-cameras-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Экшн-камеры</span>
+                <p class="products-title">Экшн-камеры</p>
               </a>
-              <p class="products-title">Экшн-камеры</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
-              <a class="fitness-bracelet-link" href="catalog.html">
+              <a class="fitness-bracelet-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Фитнес-браслеты</span>
+                <p class="products-title">Фитнес-браслеты</p>
               </a>
-              <p class="products-title">Фитнес-браслеты</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
-              <a class="smart-watches-link" href="catalog.html">
+              <a class="smart-watches-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Умные часы</span>
+                <p class="products-title">Умные часы</p>
               </a>
-              <p class="products-title">Умные часы</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
-              <a class="drones-link" href="catalog.html">
+              <a class="drones-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Квадрокоптеры</span>
+                <p class="products-title">Квадрокоптеры</p>
               </a>
-              <p class="products-title">Квадрокоптеры</p>
               <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
           </ul>
@@ -234,9 +236,9 @@
           <div class="buyers-information-container wrapper">
             <h2 class="visually-hidden">Информация покупателю</h2>
             <div class="button-container">
-              <button class="buyers-information-button button-delivery-current">Доставка</button>
-              <button class="buyers-information-button button-warranty">Гарантия</button>
-              <button class="buyers-information-button button-credit">Кредит</button>
+              <button class="buyers-information-button button-delivery-current" type="button">Доставка</button>
+              <button class="buyers-information-button button-warranty" type="button">Гарантия</button>
+              <button class="buyers-information-button button-credit" type="button">Кредит</button>
             </div>
             <ul class="buyers-information-pagination reset-list">
               <li class="buyers-information-pagination-item">
@@ -272,22 +274,27 @@
         </section>
 
         <section class="about-delivery wrapper">
-          <h2 class="visually-hidden">Доставка редкого товара</h2>
-          <ul class="delivery-list reset-list">
-            <li class="delivery-item">
-              <div class="truck">
-                <span class="visually-hidden">Иконка грузовика</span>
-              </div>
-            </li>
-            <li class="delivery-item">
-              <h3 class="product-under-the-order">Доставим редкий товар под заказ</h3>
-            </li>
-            <li class="delivery-item">
-              <a class="delivery-form-link" href="#">
-                <span class="visually-hidden">информация для заказа редкого товара</span>
-              </a>
-            </li>
-          </ul>
+          <a class="about-delivery-link" href="#">
+            <h2 class="visually-hidden">Доставка редкого товара</h2>
+            <ul class="delivery-list reset-list">
+              <li class="delivery-item">
+                <div class="truck">
+                  <span class="visually-hidden">Иконка грузовика</span>
+                </div>
+              </li>
+              <li class="delivery-item">
+                <h3 class="product-under-the-order">Доставим редкий товар под заказ</h3>
+              </li>
+              <li class="delivery-item delivery-item-3">
+                <svg class="delivery-form-icon" aria-hidden="true" focusable="false" width="41" height="40"
+                  viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 14h-2v2h2v-2ZM21 18h-2v8h2v-8Z" fill="#000" opacity=".3" />
+                  <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity=".5" />
+                  <g opacity=".3" fill="#000"></g>
+                </svg>
+              </li>
+            </ul>
+          </a>
         </section>
 
         <div class="index-columns wrapper">
@@ -303,7 +310,9 @@
               <li class="delivery-company-item item-2"><b>СДИК</b></li>
               <li class="delivery-company-item item-3"><b>ТоксБерри</b></li>
             </ul>
-            <a class="more-information" href="#">Подробнее о нас</a>
+            <div class="more-information-container">
+              <a class="more-information" href="#">Подробнее о нас</a>
+            </div>
           </section>
           <section class="contacts">
             <h2 class="contacts-title">
@@ -321,7 +330,9 @@
               <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="text-us" href="#">Напишите нам</a>
+            <div class="text-us-container">
+              <a class="text-us" href="#">Напишите нам</a>
+            </div>
           </section>
         </div>
 
@@ -355,14 +366,18 @@
         <h2 class="page-footer-title">
           <span class="visually-hidden">Интернет-магазин гаджетов "device"</span>
         </h2>
-        <img class="device-logo device-logo-footer" src="images/logo/device-yellow.svg" width="145" height="36"
-          alt="Логотип интернет-магазина device.">
+        <div class="device-logo-footer-container">
+          <a class="device-logo device-logo-footer" href="#">
+            <img src="images/logo/device-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина device.">
+          </a>
+        </div>
         <div class="footer-section-container">
           <section class="footer-address">
             <address class="footer-contacts-address">
               <p class="contacts-address-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
           </section>
+
           <section class="footer-social">
             <ul class="footer-navigation-list reset-list">
               <li class="footer-navigation-item">
@@ -401,7 +416,12 @@
               <a class="contacts-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
             </address>
             <a class="htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank">
-              <img src="images/logo/htmlacademy-logo.svg" alt="Логотип html academy">
+              <svg class="htmlacademy-logo-icon" aria-hidden="true" focusable="false" width="115" height="33"
+                viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
+                  fill="#FFC700" />
+              </svg>
             </a>
           </section>
         </div>
