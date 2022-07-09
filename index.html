@@ -346,7 +346,7 @@
                 <label class="newsletter-field" for="newsletter-email">
                   <span class="visually-hidden">Email</span>
                 </label>
-                <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email">
+                <input class="newsletter-email-field" placeholder="Ваш e-mail" type="email" id="newsletter-email">
                 <button class="newsletter-button" type="submit">Подписаться</button>
               </form>
             </div>
@@ -427,6 +427,57 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="dilvery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group name">
+              <label class="delivery-label" for="dilvery-name">Ваше имя:</label>
+              <input class="delivery-form-field-name field" type="text" name="dilvery-name" id="dilvery-name"
+                placeholder="Введите имя">
+            </p>
+            <p class="field-group mail">
+              <label class="delivery-label" for="dilvery-mail">Ваш e-mail:</label>
+              <input class="delivery-form-field-mail field" type="email" name="dilvery-mail" id="dilvery-mail"
+                placeholder="Введите e-mail">
+            </p>
+            <p class="field-group-other product">
+              <label class="delivery-label" for="dilvery-product">Что нужно привезти:</label>
+              <input class="delivery-form-field-product field" type="text" name="dilvery-product" id="dilvery-product"
+                placeholder="В свободной форме">
+            </p>
+            <p class="field-group-count delivery-label-container">
+              <span class="delivery-label delivery-label-icon">
+                <label class="delivery-label" for="count">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="4" height="12" viewBox="0 0 4 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z" fill="#000" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезем сколько получится по требованиям<br>к провозу багажа.</span>
+                </span>
+              </span>
+            <div class="number">
+              <button class="number-minus" type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+              <input type="number" name="count" id="count" min="0" value="1" readonly>
+              <button class="number-plus" type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+            </div>
+            </p>
+            <button class="modal-delivery-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
