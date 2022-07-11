@@ -1145,7 +1145,7 @@ p.products-title {
 
 .buyers-information-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   min-height: 319px;
 }
 
@@ -1154,6 +1154,7 @@ p.products-title {
   max-height: 319px;
   margin: 0;
   margin-top: -40px;
+  margin-right: 116px;
   position: relative;
 }
 
@@ -1165,24 +1166,6 @@ p.products-title {
   background-color: var(--background-color-black);
   left: 280px;
   top: -60px
-}
-
-.buyers-information-pagination {
-  display: flex;
-  margin-left: 116px;
-  margin-top: -25px;
-}
-
-.buyers-information-pagination-item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.buyers-information-title-container {
-  width: 448px;
-  min-height: 174px;
-  margin: 0;
-  padding: 0;
 }
 
 .buyers-information-button {
@@ -1295,6 +1278,46 @@ p.products-title {
   height: 0;
 }
 
+.buyers-information-pagination {
+  display: flex;
+  margin-top: -25px;
+}
+
+.buyers-information-pagination-item {
+  display: none;
+}
+
+.buyers-information-current {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyers-information-title-container-delivery {
+  width: 448px;
+  min-height: 174px;
+  margin: 0;
+  margin-right: 110px;
+  padding: 0;
+}
+
+.buyers-information-title-container-warranty {
+  width: 475px;
+  min-height: 174px;
+  margin: 0;
+  margin-right: 83px;
+  margin-top: -4px;
+  padding: 0;
+}
+
+.buyers-information-title-container-credit {
+  width: 475px;
+  min-height: 174px;
+  margin: 0;
+  margin-right: 98px;
+  margin-top: -4px;
+  padding: 0;
+}
+
 .buyers-information-title {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -1307,25 +1330,19 @@ p.products-title {
   margin-bottom: 34px;
 }
 
-.discription {
-  text-align: left;
-}
-
 .buyers-information-delivery {
   background-image: url("../images/delivery_warranty_credit/delivery-man.svg");
   background-repeat: no-repeat;
   width: 136px;
-  min-height: 164px;
-  margin-right: 63px;
-  margin-left: 110px;
-  background-position: top;
+  margin-top: -180px;
+  background-position: center;
 }
 
 .buyers-information-warranty {
   background-image: url("../images/delivery_warranty_credit/warranty-tools.svg");
   background-repeat: no-repeat;
   width: 171px;
-  margin-right: 63px;
+  margin-top: -180px;
   background-position: center;
 }
 
@@ -1333,8 +1350,8 @@ p.products-title {
   background-image: url("../images/delivery_warranty_credit/credit-man.svg");
   background-repeat: no-repeat;
   width: 156px;
-  margin-right: 63px;
-  background-position: 100%;
+  margin-top: -180px;
+  background-position: center;
 }
 
 .about-delivery {
