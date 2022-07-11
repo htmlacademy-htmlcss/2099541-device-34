@@ -2556,7 +2556,7 @@ a.product-card-link {
 .range-input {
   box-sizing: border-box;
   max-width: 58px;
-  padding: 0 2px;
+  padding: 0 4px;
   font: inherit;
   text-align: left;
   background-color: transparent;
