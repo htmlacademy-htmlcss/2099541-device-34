@@ -957,7 +957,6 @@ input:focus {
   text-decoration: none;
   text-align: center;
   padding: 10px 37px 10px 37px;
-
 }
 
 .main-characteristics {
@@ -1149,7 +1148,6 @@ p.products-title {
 
 .buyers-information-container {
   display: flex;
-  /* justify-content: space-between; */
   min-height: 319px;
 }
 
@@ -1764,7 +1762,6 @@ a.more-information {
   margin-right: 16px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .simple-discription {
@@ -1777,7 +1774,6 @@ a.more-information {
   margin: 0;
   padding: 0;
 }
-
 
 .device-logo-footer-container {
   margin-top: 62px;
@@ -2263,6 +2259,7 @@ a.more-information {
 	width: 180px;
   background-color: var(--background-color-matte);
 }
+
 .number input[type="number"] {
 	display: block;
 	height: 60px;
@@ -2282,10 +2279,12 @@ a.more-information {
 	-webkit-appearance: textfield;
 	appearance: textfield;
 }
+
 .number input[type="number"]::-webkit-outer-spin-button,
 .number input[type="number"]::-webkit-inner-spin-button {
 	display: none;
 }
+
 .number-minus {
 	position: absolute;
 	top: 1px;
@@ -2303,6 +2302,7 @@ a.more-information {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .number-plus {
 	position: absolute;
 	top: 1px;
