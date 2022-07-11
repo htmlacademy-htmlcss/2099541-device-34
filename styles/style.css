@@ -569,6 +569,14 @@ input:focus {
   transition: 0.5s ease;
 }
 
+.button-catalog-types:active {
+  opacity: 0;
+}
+
+.button-catalog-types:focus-within {
+  opacity: 0;
+}
+
 .popover-catalog {
   position: absolute;
   top: 33px;
@@ -644,6 +652,10 @@ input:focus {
 }
 
 .popover-product-link:hover {
+  opacity: 0.6;
+}
+
+.popover-product-link:active {
   opacity: 0.3;
 }
 
@@ -785,6 +797,20 @@ input:focus {
 }
 
 .slider-pagination-item {
+  display: none;
+}
+
+.drone-container-current {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fitness-bracelet-container-current {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selfie-stick-container-current {
   display: flex;
   flex-wrap: wrap;
 }
@@ -804,7 +830,7 @@ input:focus {
 }
 
 .container-selfie-stick {
-  margin-top: -105px;
+  margin-top: -74px;
 }
 
 .container-drone::before {
@@ -1175,62 +1201,26 @@ p.products-title {
 
 .buyers-information-button:hover {
   color: rgba(255, 225, 127, 0.5);
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .buyers-information-button:focus {
   color: rgba(255, 225, 127);
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
-.button-delivery-current {
-  margin-bottom: 35px;
-  color: var(--background-color-yellow);
-  background-color: var(--background-color-black);
-}
-
-.button-warranty {
-  margin-bottom: 35px;
-  position: relative;
-  z-index: 1;
-  border: none;
-}
-
-.button-warranty::before {
-  content: "";
-  position: absolute;
-  width: 160px;
-  height: 8px;
-  background-color: var(--background-color-yellow);
-  z-index: -1;
-  top: 15px;
-  left: -1px;
-}
-
-.button-warranty:hover::before {
-  height: 38px;
-  top: -1px;
-  width: 281px;
-  background-color: var(--background-color-black);
-  color: rgba(255, 225, 127, 0.5);
-  transition: 1s ease;
-}
-
-.button-warranty:focus::before {
-  height: 38px;
-  top: -1px;
-  width: 281px;
-  background-color: var(--background-color-black);
-  color: rgba(255, 225, 127);
-  transition: 1s ease;
-}
-
+.button-delivery,
+.button-warranty,
 .button-credit {
+  margin-bottom: 35px;
   position: relative;
-  z-index: 1;
   border: none;
+  z-index: 1;
+  background-color: inherit;
 }
 
+.button-delivery::before,
+.button-warranty::before,
 .button-credit::before {
   content: "";
   position: absolute;
@@ -1238,26 +1228,71 @@ p.products-title {
   height: 8px;
   background-color: var(--background-color-yellow);
   z-index: -1;
-  top: 15px;
+  top: 16px;
   left: -1px;
+  transition: 1s ease;
 }
 
+.button-delivery:hover::before,
+.button-warranty:hover::before,
 .button-credit:hover::before {
-  height: 38px;
-  top: -1px;
-  width: 281px;
+  height: 40px;
+  top: 0;
+  width: 282px;
   background-color: var(--background-color-black);
   color: rgba(255, 225, 127, 0.5);
   transition: 1s ease;
 }
 
+.button-delivery:active,
+.button-warranty:active,
+.button-credit:active {
+  color: rgba(255, 225, 127, 0.3);
+  transition: 1s ease;
+}
+
+.button-delivery:focus::before,
+.button-warranty:focus::before,
 .button-credit:focus::before {
-  height: 38px;
-  top: -1px;
+  height: 40px;
+  top: 0;
   width: 281px;
   background-color: var(--background-color-black);
   color: rgba(255, 225, 127);
-  transition: 1s ease;
+}
+
+.button-current {
+  color: var(--background-color-yellow);
+  background-color: var(--background-color-black);
+}
+
+.button-current:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.button-current:hover::before {
+  color: rgba(255, 225, 127, 0.5);
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.button-current:active {
+  color: rgba(255, 225, 127, 0.3);
+ }
+
+ .button-current:focus::before {
+  color: rgba(255, 225, 127, 0.5);
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .buyers-information-title {

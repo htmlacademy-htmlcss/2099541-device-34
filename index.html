@@ -104,7 +104,7 @@
           <ul class="sub-navigation-list reset-list">
             <li class="navigation-item">
               <label class="navigation-catalog-title" for="catalog">Каталог товаров</label>
-              <button class="button button-catalog-types" type="button" id="catalog">
+              <button class="button-catalog-types" type="button" id="catalog">
                 <span class="visually-hidden">Открыть виды товаров каталога</span>
               </button>
               <div class="popover-catalog">
@@ -174,7 +174,7 @@
                 </button>
               </div>
               <ol class="slider-pagination reset-list">
-                <li class="slider-pagination-item drone">
+                <li class="slider-pagination-item drone-container-current">
                   <img class="drone-01" src="images/promo-slider/drone-promo.png" width="560" height="560"
                     alt="Квадрокоптер с лазером.">
                   <div class="discription-container container-drone">
@@ -199,12 +199,13 @@
                     </dl>
                   </div>
                 </li>
-                <li class="slider-pagination-item fitness-bracelet visually-hidden">
+                <li class="slider-pagination-item">
                   <img class="fitness-bracelet-02" src="images/promo-slider/smart-watch-promo.png" width="560"
                     height="560" alt="Фитнес-браслет.">
                   <div class="discription-container container-fitness-bracelet">
                     <h3 class="slider-pagination-title pagination-title-fitness-bracelet">Худеем<br>правильно!</h3>
-                    <p class="item-discription">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать
+                    <p class="item-discription">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не
+                      пропускать
                       занятия и соблюдать диету.</p>
                     <div class="item-container">
                       <div class="link-container">
@@ -219,7 +220,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="slider-pagination-item selfie-stick visually-hidden">
+                <li class="slider-pagination-item">
                   <img class="selfie-stick-03" src="images/promo-slider/selfie-sticks-promo.png" width="560"
                     height="560" alt="Палка для селфи.">
                   <div class="discription-container container-selfie-stick">
@@ -281,42 +282,36 @@
                 <span class="visually-hidden">Виртуальная реальность</span>
                 <p class="products-title">Виртуальная<br>реальность</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
               <a class="selfies-monopods-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Моноподы для селфи</span>
                 <p class="products-title">Моноподы<br>для селфи</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
               <a class="action-cameras-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Экшн-камеры</span>
                 <p class="products-title">Экшн-камеры</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
               <a class="fitness-bracelet-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Фитнес-браслеты</span>
                 <p class="products-title">Фитнес-браслеты</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
               <a class="smart-watches-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Умные часы</span>
                 <p class="products-title">Умные часы</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
             <li class="products-list-item">
               <a class="drones-link item-catalog-type" href="catalog.html">
                 <span class="visually-hidden">Квадрокоптеры</span>
                 <p class="products-title">Квадрокоптеры</p>
               </a>
-              <!--сделал ссылку на каталог, но ссылка должна быть на конкретный вид товаров из каталога-->
             </li>
           </ul>
         </section>
@@ -325,27 +320,30 @@
           <div class="buyers-information-container wrapper">
             <h2 class="visually-hidden">Информация покупателю</h2>
             <div class="button-container">
-              <button class="buyers-information-button button-delivery-current" type="button">Доставка</button>
+              <button class="buyers-information-button button-delivery button-current"
+                type="button">Доставка</button>
               <button class="buyers-information-button button-warranty" type="button">Гарантия</button>
               <button class="buyers-information-button button-credit" type="button">Кредит</button>
             </div>
             <ul class="buyers-information-pagination reset-list">
-              <li class="buyers-information-pagination-item">
+              <li class="buyers-information-pagination-item buyers-information-current">
                 <div class="buyers-information-title-container">
                   <h3 class="buyers-information-title delivery" id="delivery">Доставка</h3>
                   <p class="discription delivery">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
                     совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
-                <div class="buyers-information-delivery"></div>
+                <div class="buyers-information-delivery">
+                  <span class="visually-hidden">Бегущий человек</span>
+                </div>
               </li>
               <li class="buyers-information-pagination-item visually-hidden">
                 <div class="buyers-information-title-container">
                   <h3 class="buyers-information-title warranty" id="warranty">Гарантия</h3>
                   <p class="discription warranty">Если из-за возгорания купленного нас товара у вас<br>сгорит дом - не
                     переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-                  <div class="buyers-information-warranty">
-                    <span class="visually-hidden">Инструменты</span>
-                  </div>
+                </div>
+                <div class="buyers-information-warranty">
+                  <span class="visually-hidden">Инструменты</span>
                 </div>
               </li>
               <li class="buyers-information-pagination-item visually-hidden">
@@ -353,9 +351,9 @@
                   <h3 class="buyers-information-title credit">Кредит</h3>
                   <p class="discription credit">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут
                     для вас наиболее выгодные<br>условия кредита. Выгодные для банка разумеется</p>
-                  <div class="buyers-information-credit">
-                    <span class="visually-hidden">Грузчик</span>
-                  </div>
+                </div>
+                <div class="buyers-information-credit">
+                  <span class="visually-hidden">Грузчик</span>
                 </div>
               </li>
             </ul>
