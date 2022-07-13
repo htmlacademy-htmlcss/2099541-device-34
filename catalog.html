@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
 
   <body>
     <header class="page-header">
       <div class="header-container header-container-catalog wrapper">
-        <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
         <div class="device-logo-header-container">
           <a class="device-logo device-logo-header" href="index.html">
             <img src="images/logo/device-black.svg" width="145" height="36" alt="Логотип интернет-магазина device.">
@@ -67,7 +67,7 @@
                     <li class="popover-basket-item">
                       <a class="popover-basket-link" href="catalog.html">
                         <img class="basket-purchase-image" src="/images/catalog/amature-selfie-stick-small.png"
-                          alt="Любительская селфи-палка" width="39" height="43">
+                          alt="Любительская селфи-палка." width="39" height="43">
                         <p class="basket-product-title">Любительская<br>селфи-палка</p>
                       </a>
                       <button class="delet-from-basket first-product" type="button">
@@ -77,7 +77,7 @@
                     <li class="popover-basket-item">
                       <a class="popover-basket-link" href="catalog.html">
                         <img class="basket-purchase-image image-second"
-                          src="/images/catalog/proffesional-selfie-stick-small.png" alt="Профессиональная селфи-палка"
+                          src="/images/catalog/proffesional-selfie-stick-small.png" alt="Профессиональная селфи-палка."
                           width="39" height="43">
                         <p class="basket-product-title">Профессиональная<br>селфи-палка</p>
                       </a>
@@ -157,7 +157,7 @@
     <main class="main-inner main-container">
       <div class="main-inner-container">
         <header class="inner-header wrapper">
-          <h1 class="visually-hidden">Каталог</h1>
+          <h1 class="visually-hidden">Каталог интернет-магазин гаджетов "device"</h1>
           <h2 class="inner-header-title-lvl2">Моноподы для селфи</h2>
           <ul class="breadcrumbs reset-list">
             <li class="breadcrumbs-item">
@@ -173,8 +173,11 @@
         </header>
         <div class="catalog-products-container">
           <section class="catalog-products wrapper">
+            <h2 class="catalog-products-title">
+              <span class="visually-hidden">Фильтрация</span>
+            </h2>
             <div class="catalog-container">
-              <h2 class="catalog-filter">Фильтр:</h2>
+              <h3 class="catalog-filter">Фильтр:</h3>
               <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
@@ -280,7 +283,7 @@
                   <a class="product-card-link" href="#">
                     <div class="product-card-link-container">
                       <img class="product-card-img" src="images/catalog/amature-selfie-stick.png" width="360"
-                        height="380" alt="любительская селфи-палка">
+                        height="380" alt="любительская селфи-палка.">
                       <div class="product-card-content">
                         <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
                         <span class="product-card-price">500 Р</span>
@@ -292,7 +295,7 @@
                   <a class="product-card-link" href="#">
                     <div class="product-card-link-container">
                       <img class="product-card-img" src="images/catalog/proffesional-selfie-stick.png" width="360"
-                        height="380" alt="профессиональная селфи-палка">
+                        height="380" alt="профессиональная селфи-палка.">
                       <div class="product-card-content">
                         <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
                         <span class="product-card-price">1 500 Р</span>
@@ -304,7 +307,7 @@
                   <a class="product-card-link" href="#">
                     <div class="product-card-link-container">
                       <img class="product-card-img" src="images/catalog/unsinkable-selfie-stick.png" width="360"
-                        height="380" alt="непотопляемая селфи-палка">
+                        height="380" alt="непотопляемая селфи-палка.">
                       <div class="product-card-content">
                         <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
                         <span class="product-card-price">2 500 Р</span>
@@ -316,7 +319,7 @@
                   <a class="product-card-link" href="#">
                     <div class="product-card-link-container">
                       <img class="product-card-img" src="images/catalog/runninghand-selfie-stick.png" width="360"
-                        height="380" alt="селфи-палка следуй за мной">
+                        height="380" alt="селфи-палка следуй за мной.">
                       <div class="product-card-content">
                         <h3 class="product-card-title">Селфи-палка "Следуй<br>за мной"</h3>
                         <span class="product-card-price">1 500 Р</span>
@@ -365,12 +368,18 @@
         </div>
         <div class="footer-section-container">
           <section class="footer-address">
+            <h2 class="footer-address-title">
+              <span class="visually-hidden">Адрес</span>
+            </h2>
             <address class="footer-contacts-address">
               <p class="contacts-address-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
           </section>
 
           <section class="footer-social">
+            <h2 class="footer-social-title">
+              <span class="visually-hidden">Социальные сети</span>
+            </h2>
             <ul class="footer-navigation-list reset-list">
               <li class="footer-navigation-item">
                 <a class="footer-delivery-information-link" href="#delivery">Доставка</a>
@@ -405,6 +414,9 @@
           </section>
 
           <section class="footer-phone">
+            <h2 class="footer-phone-title">
+              <span class="visually-hidden">Телефон для связи</span>
+            </h2>
             <address class="footer-contacts-address">
               <a class="contacts-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
             </address>
@@ -461,7 +473,10 @@
               <div class="number">
                 <button class="number-minus" type="button"
                   onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
-                <input type="number" name="count" id="count" min="0" value="1" readonly>
+                <label class="numbers-count" for="count">
+                  <span class="visually-hidden">Счетчик</span>
+                </label>
+                <input class="numbers-count-field" type="number" name="count" id="count" min="0" value="1" readonly>
                 <button class="number-plus" type="button"
                   onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
               </div>

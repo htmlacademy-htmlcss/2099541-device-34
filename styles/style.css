@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: rubik;
   font-style: normal;
@@ -53,6 +60,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-width: 1160px;
   min-height: 100%;
   background-color: var(--background-color-white);
   color: var(--background-color-black);
@@ -1051,6 +1059,10 @@ dd.material-type {
   margin-bottom: 172px;
 }
 
+.products-types-title {
+  margin: 0;
+}
+
 .products-list {
   display: flex;
   justify-content: space-between;
@@ -1144,6 +1156,10 @@ p.products-title {
 .buyers-information {
   background-color: var(--background-color-matte);
   margin-bottom: 70px;
+}
+
+.buyers-title {
+  margin: 0;
 }
 
 .buyers-information-container {
@@ -1335,6 +1351,7 @@ p.products-title {
 .buyers-information-delivery {
   background-image: url("../images/delivery_warranty_credit/delivery-man.svg");
   background-repeat: no-repeat;
+  background-color: inherit;
   width: 136px;
   margin-top: -180px;
   background-position: center;
@@ -1343,6 +1360,7 @@ p.products-title {
 .buyers-information-warranty {
   background-image: url("../images/delivery_warranty_credit/warranty-tools.svg");
   background-repeat: no-repeat;
+  background-color: inherit;
   width: 171px;
   margin-top: -180px;
   background-position: center;
@@ -1351,6 +1369,7 @@ p.products-title {
 .buyers-information-credit {
   background-image: url("../images/delivery_warranty_credit/credit-man.svg");
   background-repeat: no-repeat;
+  background-color: inherit;
   width: 156px;
   margin-top: -180px;
   background-position: center;
@@ -1359,6 +1378,10 @@ p.products-title {
 .about-delivery {
   background-color: var(--background-color-matte);
   margin-bottom: 70px;
+}
+
+.about-delivery-title {
+  margin: 0;
 }
 
 .about-delivery-link {
@@ -1668,6 +1691,10 @@ a.more-information {
   background-color: var(--background-color-matte);
 }
 
+.newsletter-main-title {
+  margin: 0;
+}
+
 .newsletter-container {
   display: flex;
   flex-wrap: wrap;
@@ -1775,6 +1802,10 @@ a.more-information {
   padding: 0;
 }
 
+.page-footer-title {
+  margin: 0;
+}
+
 .device-logo-footer-container {
   margin-top: 62px;
   margin-bottom: 36px;
@@ -1819,8 +1850,16 @@ a.more-information {
   background-color: var(--background-color-yellow-dark);
 }
 
+.footer-address-title {
+  margin: 0;
+}
+
 .footer-social {
   width: 444px;
+}
+
+.footer-social-title {
+  margin: 0;
 }
 
 .footer-delivery-information-link {
@@ -1874,7 +1913,8 @@ a.more-information {
 
 .footer-delivery-information-link:hover {
   color: var(--background-color-yellow-dark);
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
 }
@@ -1920,6 +1960,10 @@ a.more-information {
 .footer-phone {
   width: 175px;
   margin-left: auto;
+}
+
+.footer-phone-title {
+  margin: 0;
 }
 
 .contacts-phone:hover {
@@ -2275,7 +2319,6 @@ a.more-information {
 	text-align: center;
   border: none;
   background-color: var(--background-color-matte);
-	-moz-appearance: textfield;
 	-webkit-appearance: textfield;
 	appearance: textfield;
 }
@@ -2301,6 +2344,10 @@ a.more-information {
   background-image: url("../images/icons/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.numbers-count {
+  margin: 0;
 }
 
 .number-plus {
@@ -2438,6 +2485,10 @@ a.product-card-link {
   background-color: var(--background-color-matte);
 }
 
+.catalog-products-title {
+  margin: 0;
+}
+
 .catalog-products {
   display: flex;
 }
@@ -2561,13 +2612,15 @@ a.product-card-link {
   text-align: left;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   display: inline-block;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -2622,6 +2675,14 @@ a.product-card-link {
   content: url("../images/icons/mark-for-catalog.svg");
 }
 
+.control-input[type="checkbox"]:checked:hover + .control-mark {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked:active + .control-mark {
+  opacity: 0.3;
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -2654,7 +2715,6 @@ a.product-card-link {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 0;
-  /* margin-left: 20px; */
   width: 210px;
   min-height: 40px;
   position: relative;

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
 
   <body>
@@ -69,7 +70,7 @@
                     <li class="popover-basket-item">
                       <a class="popover-basket-link" href="catalog.html">
                         <img class="basket-purchase-image" src="/images/catalog/amature-selfie-stick-small.png"
-                          alt="Любительская селфи-палка" width="39" height="43">
+                          alt="Любительская селфи-палка." width="39" height="43">
                         <p class="basket-product-title">Любительская<br>селфи-палка</p>
                       </a>
                       <button class="delet-from-basket first-product" type="button">
@@ -79,7 +80,7 @@
                     <li class="popover-basket-item">
                       <a class="popover-basket-link" href="catalog.html">
                         <img class="basket-purchase-image image-second"
-                          src="/images/catalog/proffesional-selfie-stick-small.png" alt="Профессиональная селфи-палка"
+                          src="/images/catalog/proffesional-selfie-stick-small.png" alt="Профессиональная селфи-палка."
                           width="39" height="43">
                         <p class="basket-product-title">Профессиональная<br>селфи-палка</p>
                       </a>
@@ -273,7 +274,7 @@
         </section>
 
         <section class="gallery-products wrapper">
-          <h2 class="products-types">
+          <h2 class="products-types-title">
             <span class="visually-hidden">Виды товаров</span>
           </h2>
           <ul class="products-list reset-list">
@@ -317,8 +318,11 @@
         </section>
 
         <section class="buyers-information">
+          <h2 class="buyers-title">
+            <span class="visually-hidden">Информация покупателю</span>
+          </h2>
           <div class="buyers-information-container wrapper">
-            <h2 class="visually-hidden">Информация покупателю</h2>
+            <h3 class="visually-hidden">Виды информации покупателя</h3>
             <div class="button-container">
               <button class="buyers-information-button button-delivery button-current" type="button">Доставка</button>
               <button class="buyers-information-button button-warranty" type="button">Гарантия</button>
@@ -360,8 +364,10 @@
         </section>
 
         <section class="about-delivery wrapper">
+          <h2 class="about-delivery-title">
+            <span class="visually-hidden">Информация по доставке редкого товара</span>
+          </h2>
           <a class="about-delivery-link" href="#">
-            <h2 class="visually-hidden">Доставка редкого товара</h2>
             <ul class="delivery-list reset-list">
               <li class="delivery-item">
                 <div class="truck">
@@ -423,8 +429,11 @@
         </div>
 
         <section class="newsletter">
+          <h2 class="newsletter-main-title">
+            <span class="visually-hidden">Рассылка</span>
+          </h2>
           <div class="newsletter-container wrapper">
-            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
             <p class="newsletter-discription">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
               распаковками, а также акции, спецпредложения и вот это вот все.</p>
             <div class="subscription-form">
@@ -459,12 +468,18 @@
         </div>
         <div class="footer-section-container">
           <section class="footer-address">
+            <h2 class="footer-address-title">
+              <span class="visually-hidden">Адрес</span>
+            </h2>
             <address class="footer-contacts-address">
               <p class="contacts-address-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
           </section>
 
           <section class="footer-social">
+            <h2 class="footer-social-title">
+              <span class="visually-hidden">Социальные сети</span>
+            </h2>
             <ul class="footer-navigation-list reset-list">
               <li class="footer-navigation-item">
                 <a class="footer-delivery-information-link" href="#delivery">Доставка</a>
@@ -499,6 +514,9 @@
           </section>
 
           <section class="footer-phone">
+            <h2 class="footer-phone-title">
+              <span class="visually-hidden">Телефон для связи</span>
+            </h2>
             <address class="footer-contacts-address">
               <a class="contacts-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
             </address>
@@ -555,7 +573,10 @@
               <div class="number">
                 <button class="number-minus" type="button"
                   onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
-                <input type="number" name="count" id="count" min="0" value="1" readonly>
+                <label class="numbers-count" for="count">
+                  <span class="visually-hidden">Счетчик</span>
+                </label>
+                <input class="numbers-count-field" type="number" name="count" id="count" min="0" value="1" readonly>
                 <button class="number-plus" type="button"
                   onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
               </div>
